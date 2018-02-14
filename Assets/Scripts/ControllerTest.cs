@@ -23,5 +23,13 @@ public class ControllerTest : MonoBehaviour {
         {
             Debug.Log("Horizontal");
         }
+
+        if(Input.GetAxis("Left Stick 1") != 0) {
+            Debug.Log("Left Stick value : " + Input.GetAxis("Left Stick 1"));
+        }
+
+        if (Input.GetAxis("Right Stick 1") != 0) {
+            Debug.Log("Right Stick value : " + Input.GetAxis("Right Stick 1"));
+        }
     }
 }
