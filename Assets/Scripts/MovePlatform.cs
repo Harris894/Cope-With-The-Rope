@@ -6,13 +6,15 @@ public class MovePlatform : MonoBehaviour {
 
     public float speed;
 
+    public Rigidbody rb;
+
 	// Use this for initialization
 	void Start () {
-		
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(0, 0, -1 * Time.deltaTime * speed);
+        rb.velocity = new Vector3(0, 0, -1 * Time.deltaTime * speed);
 	}
 }

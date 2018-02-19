@@ -28,8 +28,7 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
 
     private void FixedUpdate() {
         //print(move);
-        transform.Translate(new Vector3(move.x * speed, 0, move.y * speed),Space.World);
-        //rb.AddForce(new Vector3(move.x * speed, 0, move.y * speed), ForceMode.Impulse);
-
+        //transform.Translate(new Vector3(move.x * speed, 0, move.y * speed),Space.World);
+        rb.MovePosition(transform.position + (Vector3)move * speed * Time.deltaTime);
     }
 }
