@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuickPlayerKeyboardController : MonoBehaviour {
+public class QuickPlayerKeyboard2 : MonoBehaviour {
 
     Vector2 move;
     Rigidbody rb;
@@ -12,18 +12,20 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
     public float jumpForce;
     public LayerMask groundLayers;
 
-    private void Awake() {
+    private void Awake()
+    {
         rb = GetComponent<Rigidbody>();
         col = this.GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
-        move.x = Input.GetAxis("Horizontal");
-        
-        move.y = Input.GetAxis("Vertical");
+        move.x = Input.GetAxis("Horizontal2");
 
+        move.y = Input.GetAxis("Vertical2");
+        //Change the button for jumping here.
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -31,7 +33,8 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
 
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         Vector3 newMove = new Vector3(move.x, 0, move.y);
         rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
     }
