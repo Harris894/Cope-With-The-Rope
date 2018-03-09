@@ -6,30 +6,54 @@ public class QuickPlayerController : MonoBehaviour {
 
     Vector2 move;
     Rigidbody rb;
+    CapsuleCollider col;
 
     public float speed;
+    public float jumpForce;
+    public LayerMask groundLayers;
 
     private void Awake() {
         rb = GetComponent<Rigidbody>();
+        col = this.GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update () {
 
         
-        if (Input.GetAxis("Left Stick X 1") != 0) {
-            move.x = Input.GetAxis("Left Stick X 1");
+       move.x = Input.GetAxis("Left Stick X 1");
+
+       move.y = Input.GetAxis("Left Stick Y 1");
+        
+
+        if (IsGrounded()&& Input.GetButtonDown("A1"))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
-        if (Input.GetAxis("Left Stick Y 1") != 0) {
-            move.y = Input.GetAxis("Left Stick Y 1");
+        if (Input.GetButtonDown("X1"))
+        {
+            rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX|RigidbodyConstraints.FreezeRotationZ;
+            
+        }
+
+        if (Input.GetButtonUp("X1"))
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
     }
 
-    private void FixedUpdate() {
-        //print(move);
-        transform.Translate(new Vector3(move.x * speed, 0, move.y * speed), Space.World);
-        //rb.AddForce(new Vector3(move.x * speed, 0, move.y * speed), ForceMode.Impulse);
+    private void FixedUpdate()
+    {
+        Vector3 newMove = new Vector3(move.x, 0, move.y);
+        rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
 
+    }
+
+
+    private bool IsGrounded()
+    {
+        return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
+            col.bounds.min.y, col.bounds.center.z), col.radius * .9f, groundLayers);
     }
 }

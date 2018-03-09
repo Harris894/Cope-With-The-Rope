@@ -6,30 +6,39 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
 
     Vector2 move;
     Rigidbody rb;
+    CapsuleCollider col;
 
     public float speed;
+    public float jumpForce;
+    public LayerMask groundLayers;
 
     private void Awake() {
         rb = GetComponent<Rigidbody>();
+        col = this.GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update() {
 
+        move.x = Input.GetAxis("Horizontal");
+        
+        move.y = Input.GetAxis("Vertical");
 
-        if (Input.GetAxis("Horizontal") != 0) {
-            move.x = Input.GetAxis("Horizontal");
+        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
-        if (Input.GetAxis("Vertical") != 0) {
-            move.y = Input.GetAxis("Vertical");
-        }
     }
 
     private void FixedUpdate() {
-        //print(move);
-        transform.Translate(new Vector3(move.x * speed, 0, move.y * speed),Space.World);
-        //rb.AddForce(new Vector3(move.x * speed, 0, move.y * speed), ForceMode.Impulse);
+        Vector3 newMove = new Vector3(move.x, 0, move.y);
+        rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
+    }
 
+    private bool IsGrounded()
+    {
+        return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
+            col.bounds.min.y, col.bounds.center.z), col.radius * .9f, groundLayers);
     }
 }
