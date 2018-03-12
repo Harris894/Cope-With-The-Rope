@@ -34,6 +34,13 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
     private void FixedUpdate() {
         Vector3 newMove = new Vector3(move.x, 0, move.y);
         rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
+
+        //if (newMove != Vector3.zero)
+        //{
+        //    Quaternion newRotation = Quaternion.LookRotation(newMove);
+        //    transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime);
+        //}
+
     }
 
     private bool IsGrounded()
