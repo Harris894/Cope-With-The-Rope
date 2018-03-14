@@ -43,6 +43,12 @@ public class QuickPlayerController : MonoBehaviour {
         {
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
+
+        if (move.y + move.x==0)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationY;
+        }
+        
     }
 
     private void FixedUpdate()
