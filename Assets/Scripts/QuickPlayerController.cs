@@ -24,6 +24,8 @@ public class QuickPlayerController : MonoBehaviour {
        move.x = Input.GetAxis("Left Stick X 1");
 
        move.y = Input.GetAxis("Left Stick Y 1");
+
+        
         
 
         if (IsGrounded()&& Input.GetButtonDown("A1"))
@@ -47,6 +49,15 @@ public class QuickPlayerController : MonoBehaviour {
     {
         Vector3 newMove = new Vector3(move.x, 0, move.y);
         rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
+
+        
+
+        if (newMove != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(newMove);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
+            rb.rotation = newRotation;
+        }
 
     }
 
