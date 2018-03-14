@@ -24,22 +24,33 @@ public class QuickPlayerKeyboardController : MonoBehaviour {
         
         move.y = Input.GetAxis("Vertical");
 
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        //if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //}
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
         }
 
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        }
     }
 
     private void FixedUpdate() {
         Vector3 newMove = new Vector3(move.x, 0, move.y);
         rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
 
-        //if (newMove != Vector3.zero)
-        //{
-        //    Quaternion newRotation = Quaternion.LookRotation(newMove);
-        //    transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime);
-        //}
+        if (newMove != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(newMove);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
+            rb.rotation = newRotation;
+        }
 
     }
 

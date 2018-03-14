@@ -25,11 +25,14 @@ public class QuickPlayerKeyboard2 : MonoBehaviour {
         move.x = Input.GetAxis("Horizontal2");
 
         move.y = Input.GetAxis("Vertical2");
+
         //Change the button for jumping here.
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+        //if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //}
+
+        
 
     }
 
@@ -37,6 +40,13 @@ public class QuickPlayerKeyboard2 : MonoBehaviour {
     {
         Vector3 newMove = new Vector3(move.x, 0, move.y);
         rb.MovePosition(transform.position + newMove * speed * Time.deltaTime);
+
+        if (newMove != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(newMove);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
+            rb.rotation = newRotation;
+        }
     }
 
     private bool IsGrounded()
