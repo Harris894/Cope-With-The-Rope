@@ -4,7 +4,9 @@ using UnityEngine;
 
 //USed solely for it's type at the moment.
 [RequireComponent(typeof(CanvasGroup))]
-public class Panel : MonoBehaviour
+public abstract class Panel : MonoBehaviour
 {
-
+    public abstract void OnEnter();
+    public abstract void OnUpdate();
+    public abstract void OnExit(); 
 }
