@@ -63,7 +63,6 @@ public class PickUpNThrow : MonoBehaviour {
 
 
 
-
 //raycast in front of each player, if raycast hits other player > canPickUp=true.;
 //if canPickUp&&keycode.E=true then otherplayer.position=holder.position;
 
