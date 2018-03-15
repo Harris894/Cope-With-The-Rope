@@ -10,13 +10,15 @@ public class CameraFollow : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
-        Vector3 targetTransform = Vector3.zero;
-        foreach(Transform target in targets){
-            targetTransform += target.transform.position;
+        if(targets.Count > 0) {
+            Vector3 targetTransform = Vector3.zero;
+            foreach (Transform target in targets) {
+                targetTransform += target.transform.position;
+            }
+            targetTransform = targetTransform / targets.Count;
+
+            transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, time);
+            transform.LookAt(targetTransform);
         }
-        targetTransform = targetTransform / targets.Count;
-        
-        transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, time);
-        transform.LookAt(targetTransform);
 	}
 }
