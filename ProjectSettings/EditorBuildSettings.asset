@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EndlessRunner.unity
-    guid: 836987de35364b1479ff1ac996e1a0cd
+    path: Assets/Scenes/DEMO.unity
+    guid: fcb9a258fdb414c4781983b4ba0f9e39
+  - enabled: 1
+    path: Assets/Scenes/DEMO TREE.unity
+    guid: 1fc3d5f11898e954a830bd50cf838dea
