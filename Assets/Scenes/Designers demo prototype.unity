@@ -462,6 +462,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1414640168}
 --- !u!4 &725655585 stripped
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 Transform:
   m_PrefabParentObject: {fileID: 4816037963133892, guid: 6702b64d698906447bcab05e875e84d3,
     type: 2}
@@ -503,6 +504,11 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1310113761}
 =======
+=======
+Transform:
+  m_PrefabParentObject: {fileID: 4816037963133892, guid: 6702b64d698906447bcab05e875e84d3,
+    type: 2}
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_PrefabInternal: {fileID: 1826692478}
 --- !u!43 &804221735
 Mesh:
@@ -634,6 +640,9 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
+=======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &805917130
 GameObject:
@@ -887,17 +896,139 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 893811037}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &984393716
+=======
+--- !u!4 &984393720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 984393716}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.43, y: 0.001, z: -0.742}
+  m_LocalScale: {x: 0.54, y: 0.25, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1012234656
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+  - component: {fileID: 1012234661}
+  - component: {fileID: 1012234660}
+  - component: {fileID: 1012234659}
+  - component: {fileID: 1012234658}
+  - component: {fileID: 1012234657}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1012234657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012234656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2025f3becd6a7d429b4fa5f821c5186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 708366382}
+  - {fileID: 1677681821}
+  time: 1
+  cameraOffset: {x: 0, y: 1.03, z: -1.6}
+--- !u!81 &1012234658
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012234656}
+  m_Enabled: 1
+--- !u!124 &1012234659
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012234656}
+  m_Enabled: 1
+--- !u!20 &1012234660
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012234656}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1012234661
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012234656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09146144, y: 0.19542313, z: 0.07318452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1048263949
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
   - component: {fileID: 984393720}
   - component: {fileID: 984393719}
   - component: {fileID: 984393718}
   - component: {fileID: 984393717}
+=======
+  - component: {fileID: 1048263953}
+  - component: {fileID: 1048263952}
+  - component: {fileID: 1048263951}
+  - component: {fileID: 1048263950}
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_Layer: 0
   m_Name: Platform 6
   m_TagString: Untagged
@@ -951,7 +1082,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 --- !u!33 &984393719
+=======
+--- !u!33 &1048263952
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -963,6 +1098,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
   m_GameObject: {fileID: 984393716}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.43, y: 0.001, z: -0.742}
@@ -1153,6 +1289,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+=======
+  m_GameObject: {fileID: 1048263949}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2.71, y: 0, z: 5.22}
+  m_LocalScale: {x: 0.4, y: 0.25, z: 4}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &1077442947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1594,146 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1204911680
 Prefab:
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
+=======
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].pinBodies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].pinIndices.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].pinOffsets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].stiffnesses.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].activeConstraints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].pinBreakResistance.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33406046858248446, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 804221735}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809802431808178, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287790060516490, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: controlPoints.Array.data[2].x
+      value: 5.8714995
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287790060516490, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: controlPoints.Array.data[2].z
+      value: -0.0024926662
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354997164997862, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: batches.Array.data[0].constraintCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287790060516490, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: controlPoints.Array.data[3].x
+      value: 7.864208
+      objectReference: {fileID: 0}
+    - target: {fileID: 114093909236562642, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: tearable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114093909236562642, guid: 70365caeaea7b444f96e6bc3ffa4bca2,
+        type: 2}
+      propertyPath: solver
+      value: 
+      objectReference: {fileID: 17272841}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 70365caeaea7b444f96e6bc3ffa4bca2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1205351962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1205351966}
+  - component: {fileID: 1205351965}
+  - component: {fileID: 1205351964}
+  - component: {fileID: 1205351963}
+  m_Layer: 0
+  m_Name: Saveplat3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1205351963
+MeshRenderer:
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -1735,6 +2021,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 <<<<<<< HEAD:Assets/Designers/Designers demo prototype.unity
 --- !u!114 &1209979617
 MonoBehaviour:
@@ -1814,6 +2101,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &1319228875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +2163,7 @@ BoxCollider:
   m_GameObject: {fileID: 1319228875}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 <<<<<<< HEAD:Assets/Designers/Designers demo prototype.unity
   m_Enabled: 1
   serializedVersion: 2
@@ -1949,6 +2239,8 @@ Behaviour:
   m_GameObject: {fileID: 1364601185}
 =======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1971,10 +2263,75 @@ Transform:
   m_LocalScale: {x: 3.9454746, y: 0.25, z: 1.84}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 <<<<<<< HEAD:Assets/Designers/Designers demo prototype.unity
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 31, y: 0, z: 0}
 --- !u!1 &1395675676
+=======
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: -3.5, z: 0}
+--- !u!1001 &1414640168
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.1403881
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.20869595
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423775304966954, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995307462270158, guid: 5e3678bfafea175469093c9585cddb30,
+        type: 2}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5e3678bfafea175469093c9585cddb30, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1476238701
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2064,6 +2421,7 @@ MeshFilter:
 --- !u!1001 &1414640168
 Prefab:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -2195,6 +2553,8 @@ MeshFilter:
 --- !u!4 &1476238705
 Transform:
   m_ObjectHideFlags: 0
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476238701}
@@ -2202,6 +2562,7 @@ Transform:
   m_LocalPosition: {x: 6.74, y: 0, z: 5.75}
   m_LocalScale: {x: 4.33, y: 0.25, z: 5.01}
   m_Children: []
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 <<<<<<< HEAD:Assets/Designers/Designers demo prototype.unity
   m_Father: {fileID: 1482138610}
   m_RootOrder: 2
@@ -2257,6 +2618,8 @@ Transform:
   - {fileID: 1855231640}
   - {fileID: 1395675677}
   - {fileID: 1797638535}
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 =======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   m_Father: {fileID: 0}
@@ -2680,6 +3043,7 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1630316911
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3038,6 +3402,8 @@ MeshFilter:
   m_GameObject: {fileID: 1802627507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1855231639
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3121,7 +3487,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855231639}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &1886056330
+=======
+--- !u!4 &1630316915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630316911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.74, y: 0.728, z: 3.734}
+  m_LocalScale: {x: 0.4, y: 1.19, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1677681821 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4340675657218454, guid: e45cf82879a08774e9e3675bca9e59ae,
+    type: 2}
+  m_PrefabInternal: {fileID: 2130640463}
+--- !u!1 &1782886954
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3209,6 +3597,22 @@ MeshFilter:
 --- !u!1001 &1826692478
 Prefab:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
+=======
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782886954}
+  m_LocalRotation: {x: 0.14520451, y: 0.69203734, z: 0.14520451, w: 0.69203734}
+  m_LocalPosition: {x: -1.69, y: -0.299, z: 0.304}
+  m_LocalScale: {x: 1.77, y: 0.15, z: 1.3947822}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 23.7}
+--- !u!1001 &1826692478
+Prefab:
+  m_ObjectHideFlags: 0
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -3286,6 +3690,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6702b64d698906447bcab05e875e84d3, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD:Assets/Scenes/Designers demo prototype.unity
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
+=======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3:Assets/Scenes/Designers demo prototype.unity
 --- !u!1 &2077015542
 GameObject:

@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -54,10 +55,15 @@ public class PlayerController : MonoBehaviour {
             //    rb.constraints = RigidbodyConstraints.FreezeRotationY;
             //}
 =======
+=======
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
             if (move.y + move.x == 0)
             {
                 rb.constraints = RigidbodyConstraints.FreezeRotationY;
             }
+<<<<<<< HEAD
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
+=======
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
         }
         else //If using keyboard
@@ -81,10 +87,14 @@ public class PlayerController : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
 
         
         
+=======
+        }  
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
 =======
         }  
 >>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
