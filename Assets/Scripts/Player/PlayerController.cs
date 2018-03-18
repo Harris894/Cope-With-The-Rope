@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -44,6 +43,7 @@ public class PlayerController : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
 
+<<<<<<< HEAD
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -53,6 +53,12 @@ public class PlayerController : MonoBehaviour {
             //{
             //    rb.constraints = RigidbodyConstraints.FreezeRotationY;
             //}
+=======
+            if (move.y + move.x == 0)
+            {
+                rb.constraints = RigidbodyConstraints.FreezeRotationY;
+            }
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
         }
         else //If using keyboard
         {
@@ -66,18 +72,22 @@ public class PlayerController : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+                rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+                rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
+<<<<<<< HEAD
         }
 
         
         
+=======
+        }  
+>>>>>>> parent of 5678e8b... Merge branch 'master' of github.com:ShiroyashaGin/Game-Lab2.3
     }
 
     private void FixedUpdate()
