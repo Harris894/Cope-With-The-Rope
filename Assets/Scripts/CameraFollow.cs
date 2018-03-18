@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour {
     public Vector3 cameraOffset;
     
 	// Update is called once per frame
-	void LateUpdate () {
+	void Update () {
         if(targets.Count > 0) {
             Vector3 targetTransform = Vector3.zero;
             foreach (Transform target in targets) {
