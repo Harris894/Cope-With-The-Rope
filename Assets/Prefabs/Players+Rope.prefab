@@ -1222,13 +1222,11 @@ GameObject:
   - component: {fileID: 95558281377295686}
   - component: {fileID: 136976801626961124}
   - component: {fileID: 54466669507086634}
-  - component: {fileID: 114704130780719502}
   - component: {fileID: 114629948123996622}
   - component: {fileID: 144065977651661424}
-  - component: {fileID: 114955162100699442}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1503,13 +1501,12 @@ GameObject:
   - component: {fileID: 4009043717000334}
   - component: {fileID: 95966270047571962}
   - component: {fileID: 54369761279419468}
-  - component: {fileID: 114257611865855856}
-  - component: {fileID: 114724537450299008}
+  - component: {fileID: 114159549649643216}
   - component: {fileID: 144108719738792970}
   - component: {fileID: 136057552246948722}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3616,7 +3613,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771503004946964}
   m_LocalRotation: {x: -0, y: -0.01016444, z: -0, w: 0.9999484}
-  m_LocalPosition: {x: -5.011219, y: 0.8804219, z: -1.3279316}
+  m_LocalPosition: {x: -5.011219, y: 0.8804219, z: -1.238}
   m_LocalScale: {x: 0.18211028, y: 0.18211031, z: 0.44844487}
   m_Children: []
   m_Father: {fileID: 4416212864545540}
@@ -4754,7 +4751,7 @@ Transform:
   - {fileID: 4416212864545540}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4816129923597008
 Transform:
   m_ObjectHideFlags: 1
@@ -5960,18 +5957,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114257611865855856
+--- !u!114 &114159549649643216
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532908700251186}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6cf5edd1b6a547a25276645174dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: c2c1589a05fbef549b7a2a1a4dd3a8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  controllerNumber: 2
+  useController: 0
+  speed: 8
   jumpForce: 0
   groundLayers:
     serializedVersion: 2
@@ -5982,59 +5981,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1451445888619692}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2c1589a05fbef549b7a2a1a4dd3a8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  controllerNumber: 1
+  useController: 0
+  speed: 8
   jumpForce: 0
   groundLayers:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &114704130780719502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1451445888619692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a401d12a46bd7458a2eee6949c1776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  jumpForce: 15
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &114724537450299008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1532908700251186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7162a4ad9164ac14ea13d889c5863483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  jumpForce: 15
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &114955162100699442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1451445888619692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6963b21c133473145987f720c6cb7e0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &136057552246948722
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -6225,8 +6183,8 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
-    spring: 20
-    damper: 10
+    spring: 0
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -6269,8 +6227,8 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
-    spring: 5
-    damper: 10
+    spring: 0
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0

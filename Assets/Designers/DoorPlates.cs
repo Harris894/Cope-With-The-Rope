@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doorplates : MonoBehaviour {
+public class DoorPlates : MonoBehaviour
+{
 
     public static bool pressed1 = false;
     public static bool pressed2 = false;
 
     public GameObject door;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PressurePlate")
+        if (other.tag == "Player")
         {
             if (pressed1 == false)
             {
@@ -26,16 +27,18 @@ public class Doorplates : MonoBehaviour {
             if (pressed1 == true && pressed2 == true)
             {
                 DestroyObject(door);
+                
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "PressurePlate")
+        if (other.tag == "Player")
         {
             pressed1 = false;
         }
     }
 
 }
+
