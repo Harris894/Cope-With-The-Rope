@@ -17,22 +17,29 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce;
     public LayerMask groundLayers;
 
+    private bool canMove;
+
     private void Awake() {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update () {
         if (useController)
         {
-            move.x = Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber));
-            move.y = Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber));
-
-            if (IsGrounded() && Input.GetButtonDown(string.Format("A{0}", controllerNumber)))
+            if (canMove)
             {
-                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                move.x = Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber));
+                move.y = Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber));
             }
+            
+
+            //if (IsGrounded() && Input.GetButtonDown(string.Format("A{0}", controllerNumber)))
+            //{
+            //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            //}
 
             if (Input.GetButtonDown(string.Format("X{0}", controllerNumber)))
             {
@@ -56,8 +63,11 @@ public class PlayerController : MonoBehaviour {
         }
         else //If using keyboard
         {
-            move.x = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber));
-            move.y = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
+            if (canMove)
+            {
+                move.x = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber));
+                move.y = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
+            }
 
             //if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
             //{
@@ -66,13 +76,16 @@ public class PlayerController : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
-
+                //rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+                rb.isKinematic = true;
+                canMove = false;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+                //rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+                rb.isKinematic = false;
+                canMove = true;
             }
         }
 
