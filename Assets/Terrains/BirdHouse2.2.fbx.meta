@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: bb7c78ab9dc66104e8f4f5a13c97212e
+timeCreated: 1521574671
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BirdHouse
+    100002: BirdHouse.001
+    100004: BirdHouse.002
+    100006: //RootNode
+    100008: BirdHouseDoor
+    100010: Branch#1
+    100012: Branch#2
+    100014: Branch#3
+    100016: Bridge#1
+    100018: Cube
+    100020: Cube.001
+    100022: Door
+    100024: InsideOfTree
+    100026: MovablePlatform#1
+    100028: Platform#1
+    100030: Platform#2
+    100032: PlatformExit#1
+    100034: RopeBridge#1.000
+    100036: RopeBridge#1.001
+    100038: Tree#1
+    100040: Tree#2
+    100042: Tree#3
+    400000: BirdHouse
+    400002: BirdHouse.001
+    400004: BirdHouse.002
+    400006: //RootNode
+    400008: BirdHouseDoor
+    400010: Branch#1
+    400012: Branch#2
+    400014: Branch#3
+    400016: Bridge#1
+    400018: Cube
+    400020: Cube.001
+    400022: Door
+    400024: InsideOfTree
+    400026: MovablePlatform#1
+    400028: Platform#1
+    400030: Platform#2
+    400032: PlatformExit#1
+    400034: RopeBridge#1.000
+    400036: RopeBridge#1.001
+    400038: Tree#1
+    400040: Tree#2
+    400042: Tree#3
+    2100000: No Name
+    2100002: Material.005
+    2100004: Material.004
+    2100006: Material.003
+    2100008: Material.002
+    2100010: Material.001
+    2100012: Material
+    2300000: BirdHouse
+    2300002: BirdHouse.001
+    2300004: BirdHouse.002
+    2300006: BirdHouseDoor
+    2300008: Branch#1
+    2300010: Branch#2
+    2300012: Branch#3
+    2300014: Bridge#1
+    2300016: Cube
+    2300018: Cube.001
+    2300020: Door
+    2300022: InsideOfTree
+    2300024: MovablePlatform#1
+    2300026: Platform#1
+    2300028: Platform#2
+    2300030: PlatformExit#1
+    2300032: RopeBridge#1.000
+    2300034: RopeBridge#1.001
+    2300036: Tree#1
+    2300038: Tree#2
+    2300040: Tree#3
+    3300000: BirdHouse
+    3300002: BirdHouse.001
+    3300004: BirdHouse.002
+    3300006: BirdHouseDoor
+    3300008: Branch#1
+    3300010: Branch#2
+    3300012: Branch#3
+    3300014: Bridge#1
+    3300016: Cube
+    3300018: Cube.001
+    3300020: Door
+    3300022: InsideOfTree
+    3300024: MovablePlatform#1
+    3300026: Platform#1
+    3300028: Platform#2
+    3300030: PlatformExit#1
+    3300032: RopeBridge#1.000
+    3300034: RopeBridge#1.001
+    3300036: Tree#1
+    3300038: Tree#2
+    3300040: Tree#3
+    4300000: RopeBridge#1.000
+    4300002: RopeBridge#1.001
+    4300004: Door
+    4300006: BirdHouse.002
+    4300008: Cube.001
+    4300010: Cube
+    4300012: BirdHouseDoor
+    4300014: PlatformExit#1
+    4300016: MovablePlatform#1
+    4300018: BirdHouse.001
+    4300020: InsideOfTree
+    4300022: BirdHouse
+    4300024: Tree#3
+    4300026: Tree#2
+    4300028: Tree#1
+    4300030: Branch#1
+    4300032: Branch#2
+    4300034: Branch#3
+    4300036: Bridge#1
+    4300038: Platform#2
+    4300040: Platform#1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
