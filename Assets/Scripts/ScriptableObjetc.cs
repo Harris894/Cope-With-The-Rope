@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ScriptableObjetc : ScriptableObject {
 
-    public bool player1GettingCarried;
-    public bool player2GettingCarried;
+    public bool p1Grounded;
+    public bool p2Grounded;
 
 }
