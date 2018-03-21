@@ -23,6 +23,11 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
         canMove = true;
+        useController = Input.GetJoystickNames().Length >= controllerNumber ? true : false;
+        //Debug.Log(Input.GetJoystickNames().Length);
+        foreach(string joystickName in Input.GetJoystickNames()) {
+            Debug.Log(joystickName);
+        }
     }
 
     // Update is called once per frame
