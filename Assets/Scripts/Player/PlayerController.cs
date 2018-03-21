@@ -89,8 +89,18 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
+            Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
+            rb.mass = 3;
+        }else {
+            rb.mass = 0.1f; 
+        }
         
         
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.DrawCube(transform.position, Vector3.one * 0.5f);
     }
 
     private void FixedUpdate()
