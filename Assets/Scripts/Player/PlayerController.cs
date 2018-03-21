@@ -77,15 +77,17 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 //rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
-                rb.isKinematic = true;
                 canMove = false;
+                rb.isKinematic = true;
+                
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 //rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
-                rb.isKinematic = false;
                 canMove = true;
+                rb.isKinematic = false;
+                
             }
         }
 

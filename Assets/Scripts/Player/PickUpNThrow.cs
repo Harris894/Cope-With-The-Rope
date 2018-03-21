@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUpNThrow : MonoBehaviour {
 
-    public ScriptableObjetc myStats;
+    //public ScriptableObjetc myStats;
     public float rayDistance;
     public Transform holder;
     public GameObject player2;
