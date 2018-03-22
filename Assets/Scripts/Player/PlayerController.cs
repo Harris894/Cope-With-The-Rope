@@ -23,11 +23,9 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
         canMove = true;
-        useController = Input.GetJoystickNames().Length >= controllerNumber ? true : false;
+        //useController = Input.GetJoystickNames().Length >= controllerNumber ? true : false;
         //Debug.Log(Input.GetJoystickNames().Length);
-        foreach(string joystickName in Input.GetJoystickNames()) {
-            Debug.Log(joystickName);
-        }
+        
     }
 
     // Update is called once per frame
@@ -50,8 +48,7 @@ public class PlayerController : MonoBehaviour {
             {
                 rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
-
-            if (Input.GetButtonUp(string.Format("X{0}", controllerNumber)))
+            else
             {
                 rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
@@ -66,7 +63,7 @@ public class PlayerController : MonoBehaviour {
             //    rb.constraints = RigidbodyConstraints.FreezeRotationY;
             //}
         }
-        else //If using keyboard
+        else if(!useController)
         {
             if (canMove)
             {
@@ -83,27 +80,23 @@ public class PlayerController : MonoBehaviour {
             {
                 //rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
                 canMove = false;
-                rb.isKinematic = true;
-                
+                rb.isKinematic = true; 
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 //rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
                 canMove = true;
-                rb.isKinematic = false;
-                
+                rb.isKinematic = false; 
             }
         }
 
         if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
-            Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
+            //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
             rb.mass = 3;
         }else {
             rb.mass = 0.1f; 
         }
-        
-        
     }
 
     private void OnDrawGizmos() {
