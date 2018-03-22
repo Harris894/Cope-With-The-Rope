@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuUIManager : MonoBehaviour {
+public class MenuUIManager : UIManager {
 
     public Panel activePanel;
 
     public void Update() {
+        if(activePanel != null)
         activePanel.OnUpdate();
     }
 
@@ -17,3 +18,4 @@ public class MenuUIManager : MonoBehaviour {
         activePanel.OnEnter();
     }
 }
+ c
