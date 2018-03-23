@@ -8,7 +8,7 @@ public class DoorPlates : MonoBehaviour
     public static bool pressed1 = false;
     public static bool pressed2 = false;
 
-    public GameObject door;
+    public Animator animDoor;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -26,7 +26,7 @@ public class DoorPlates : MonoBehaviour
 
             if (pressed1 == true && pressed2 == true)
             {
-                DestroyObject(door);
+                animDoor.SetBool("doOpen", true);
                 
             }
         }

@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
+        if(Physics.CheckBox(transform.position, Vector3.one * 0.3f, transform.rotation, groundLayers)) {
             Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
             rb.mass = 3;
         }else {
@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void OnDrawGizmos() {
-        Gizmos.DrawCube(transform.position, Vector3.one * 0.5f);
+        Gizmos.DrawCube(transform.position, Vector3.one * 0.3f);
     }
 
     private void FixedUpdate()
