@@ -24,6 +24,6 @@ MonoBehaviour:
   - name: Demo
     sceneName: DEMO
     thumb: {fileID: 0}
-  - name: Football
-    sceneName: Football demo
+  - name: Moving platform
+    sceneName: DEMO Moving platform cylinder
     thumb: {fileID: 0}

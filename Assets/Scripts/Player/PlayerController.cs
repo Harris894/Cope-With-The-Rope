@@ -95,13 +95,8 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-<<<<<<< HEAD
-        if(Physics.CheckBox(transform.position, Vector3.one * 0.3f, transform.rotation, groundLayers)) {
-            Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
-=======
         if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
             //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
->>>>>>> f2bafe5ea9a72a20f3b39cb81a8e3b788b213ebf
             rb.mass = 3;
         }else {
             rb.mass = 0.1f; 
