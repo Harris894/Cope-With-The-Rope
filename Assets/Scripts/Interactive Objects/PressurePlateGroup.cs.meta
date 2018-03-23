@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d163e914708d5944998bb948c8e57076
+timeCreated: 1521677068
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pressurePlatePrefab: {fileID: 1328966809377924, guid: 5e2bcebee58d3ce4a82a43a0101d5922,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

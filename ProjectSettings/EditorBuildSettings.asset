@@ -5,15 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 4066b8163cc8bd64d847022a935c2cc0
+  - enabled: 1
+    path: Assets/Designers/Designers demo prototype.unity
+    guid: aab815f865a98da4aa0fb8a29bb2a7a1
+  - enabled: 1
     path: Assets/Scenes/DEMO.unity
     guid: fcb9a258fdb414c4781983b4ba0f9e39
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DEMO TREE.unity
     guid: 1fc3d5f11898e954a830bd50cf838dea
+<<<<<<< HEAD
   - enabled: 0
     path: Assets/Designers/Designers demo prototype.unity
     guid: aab815f865a98da4aa0fb8a29bb2a7a1
+=======
+  - enabled: 1
+    path: Assets/Scenes/Football demo.unity
+    guid: c8570e6b4bc451d41b6f05ed8e69f7a6
+  - enabled: 1
+    path: Assets/Scenes/DEMO OBI Harris.unity
+    guid: 9a5a566756f6e4d4c866be8c5d8cea98
+>>>>>>> f2bafe5ea9a72a20f3b39cb81a8e3b788b213ebf
   - enabled: 1
     path: Assets/Scenes/DEMO OBI Jaron.unity
     guid: 834aea8b8898f00468b8eed7d8080f37

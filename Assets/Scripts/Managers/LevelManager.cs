@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+    public static LevelManager instance;
     public List<Object> levels;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+        instance = this;
 	}
 	
 	// Update is called once per frame
