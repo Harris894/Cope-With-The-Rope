@@ -9,8 +9,10 @@ public class MySceneManager : MonoBehaviour {
     public SceneManager sceneManager;
 
 	void Start () {
-        if (instance == null)
+        if (instance == null) {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }  
         else
             Destroy(this);
 	}
