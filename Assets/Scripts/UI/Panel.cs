@@ -13,7 +13,8 @@ public class Panel : MonoBehaviour
      private Selectable firstSelectedElement;
 
     public virtual void OnEnter() {
-        uiManager.eve
+        if(firstSelectedElement != null)
+        uiManager.eventSystem.SetSelectedGameObject(firstSelectedElement.gameObject);
     }
 
     public virtual void OnUpdate() {

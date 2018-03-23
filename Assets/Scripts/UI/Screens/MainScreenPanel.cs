@@ -10,15 +10,15 @@ public class MainScreenPanel : Panel {
     }
 
     public override void OnEnter() {
-        //Debug.Log("Start");
+        base.OnEnter();
     }
 
     public override void OnUpdate() {
-        //Debug.Log("Update");
+        base.OnUpdate();
     }
 
     public override void OnExit() {
-        throw new NotImplementedException();
+        base.OnExit();
     }
 
 }

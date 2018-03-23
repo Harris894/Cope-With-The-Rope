@@ -18,4 +18,3 @@ public class MenuUIManager : UIManager {
         activePanel.OnEnter();
     }
 }
- c
