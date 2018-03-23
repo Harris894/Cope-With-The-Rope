@@ -12,6 +12,10 @@ public class MenuUIManager : UIManager {
     }
 
     public void SetActivePanel(Panel panel) {
+        if(panel == null) {
+            Debug.LogError("Panel not set to an instance on and object!");
+            return;
+        }
         activePanel.OnExit();
 
         activePanel = panel;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.34509805, g: 0.38039216, b: 0.39607844, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -842,37 +842,6 @@ MonoBehaviour:
       instantPosition: {fileID: 0}
       instantScale: 1
       instantAlpha: 1
-      moveEndPosition: {fileID: 1183173347}
-      moveSpeed: 0.3
-      moveEase: 6
-      toFadeValue: 0
-      fadeSpeed: 0
-      fadeEase: 0
-      toZoom: 0
-      zoomSpeed: 0
-      zoomEase: 0
-    enableRaycastAfter: 0
-    setActiveAfter: 0
-  - tweenID: 0
-    target: {fileID: 0}
-    subTransition:
-    - transitionType: 0
-      instantPosition: {fileID: 1367298598}
-      instantScale: 1
-      instantAlpha: 1
-      moveEndPosition: {fileID: 0}
-      moveSpeed: 0
-      moveEase: 0
-      toFadeValue: 0
-      fadeSpeed: 0
-      fadeEase: 0
-      toZoom: 0
-      zoomSpeed: 0
-      zoomEase: 0
-    - transitionType: 1
-      instantPosition: {fileID: 0}
-      instantScale: 1
-      instantAlpha: 1
       moveEndPosition: {fileID: 1142674955}
       moveSpeed: 0.3
       moveEase: 6
@@ -884,6 +853,24 @@ MonoBehaviour:
       zoomEase: 0
     enableRaycastAfter: 1
     setActiveAfter: 1
+  - tweenID: 0
+    target: {fileID: 1635744687}
+    subTransition:
+    - transitionType: 1
+      instantPosition: {fileID: 0}
+      instantScale: 1
+      instantAlpha: 1
+      moveEndPosition: {fileID: 1367298598}
+      moveSpeed: 0.3
+      moveEase: 6
+      toFadeValue: 0
+      fadeSpeed: 0
+      fadeEase: 0
+      toZoom: 0
+      zoomSpeed: 0
+      zoomEase: 0
+    enableRaycastAfter: 0
+    setActiveAfter: 0
 --- !u!225 &853522756
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -915,7 +902,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.34450695, g: 0.38183692, b: 0.39705884, a: 1}
+    m_HighlightedColor: {r: 0.34509805, g: 0.38039216, b: 0.39607844, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -949,7 +936,7 @@ MonoBehaviour:
         m_MethodName: SetActivePanel
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1040311223}
           m_ObjectArgumentAssemblyTypeName: Panel, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1411,7 +1398,7 @@ GameObject:
   - component: {fileID: 1040311224}
   - component: {fileID: 1040311223}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel - Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2660,7 +2647,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.34509805, g: 0.38039216, b: 0.39607844, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
