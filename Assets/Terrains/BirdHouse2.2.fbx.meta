@@ -119,6 +119,27 @@ ModelImporter:
     4300036: Bridge#1
     4300038: Platform#2
     4300040: Platform#1
+    6400000: BirdHouse
+    6400002: BirdHouse.001
+    6400004: BirdHouse.002
+    6400006: BirdHouseDoor
+    6400008: Branch#1
+    6400010: Branch#2
+    6400012: Branch#3
+    6400014: Bridge#1
+    6400016: Cube
+    6400018: Cube.001
+    6400020: Door
+    6400022: InsideOfTree
+    6400024: MovablePlatform#1
+    6400026: Platform#1
+    6400028: Platform#2
+    6400030: PlatformExit#1
+    6400032: RopeBridge#1.000
+    6400034: RopeBridge#1.001
+    6400036: Tree#1
+    6400038: Tree#2
+    6400040: Tree#3
   externalObjects: {}
   materials:
     importMaterials: 1
