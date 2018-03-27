@@ -108,12 +108,12 @@ public class PlayerController : MonoBehaviour {
 
         if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
             //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
-            rb.mass = 3;
+            rb.mass = 15;
         }else {
             rb.mass = 0.1f; 
         }
         move = Camera.main.transform.rotation * move;
-        move.y = 0;
+        //move.y = 0;
     }
 
     private void OnDrawGizmos() {
