@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour {
             rb.mass = 0.1f; 
         }
         move = Camera.main.transform.rotation * move;
-        //move.y = 0;
+        move.y = 0;
     }
 
     private void OnDrawGizmos() {
