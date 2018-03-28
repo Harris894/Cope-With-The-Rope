@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(MovingObject))]
-public class MovingObjectEditor : Editor {
+public class Ball : MonoBehaviour {
+
+    public int goalValue;
+
 	// Use this for initialization
 	void Start () {
 		
