@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 
     public int controllerNumber;
     public bool useController;
+    public bool moveRelativeToCamera;
 
 
     public float speed;
@@ -44,12 +45,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (canMove)
             {
-                //move.x = Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber));
-                //move.y = Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber));
-                move = new Vector3(Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber)), 0, Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber)));
-                
-                
-
+                move.Set(Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber)), 0, Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber)));
             }
             
 
@@ -112,8 +108,11 @@ public class PlayerController : MonoBehaviour {
         }else {
             rb.mass = 0.1f; 
         }
-        move = Camera.main.transform.rotation * move;
-        //move.y = 0;
+
+        if (moveRelativeToCamera) {
+            move = Camera.main.transform.rotation * move;
+            move.y = 0;
+        }        
     }
 
     private void OnDrawGizmos() {
@@ -124,7 +123,7 @@ public class PlayerController : MonoBehaviour {
     {
         //Vector3 newMove = new Vector3(cameraX, 0, move.y);
         rb.MovePosition(transform.position + move * speed * Time.deltaTime);
-
+        
         //rb.MovePosition((camRotation.forward + move.y) * speed * Time.deltaTime);
         //rb.MovePosition((camRotation.right + move.x) * speed * Time.deltaTime);
 
