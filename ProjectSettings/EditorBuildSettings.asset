@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DEMO Moving platform cylinder.unity
     guid: a656c03eb232aaa4c8c548d89d92dd59
+  - enabled: 1
+    path: Assets/Scenes/Football demo.unity
+    guid: c8570e6b4bc451d41b6f05ed8e69f7a6

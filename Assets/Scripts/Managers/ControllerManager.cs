@@ -33,7 +33,7 @@ public class ControllerManager : MonoBehaviour {
     /// </summary>
     void FindPlayerControllers()
     {
-        PlayerController[] allPlayerControllers = Resources.FindObjectsOfTypeAll<PlayerController>();
+        PlayerController[] allPlayerControllers = FindObjectsOfType<PlayerController>();
         Debug.Log(allPlayerControllers.Length + " Player Controllers found!");
         foreach(PlayerController playerController in allPlayerControllers)
         {

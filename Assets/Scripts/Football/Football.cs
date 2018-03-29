@@ -12,7 +12,7 @@ public class Football : GameMode {
     public GameObject ballPrefab;
     public Ball currentBall;
 
-    private FootballUI footballUI;
+    public FootballUI footballUI;
 
     private void Awake() {
         if (instance != null) {

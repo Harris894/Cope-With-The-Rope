@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FootballUI : MonoBehaviour {
 
-    private Football football;
+    public Football football;
     public Text[] teamScores;
     public Text resultText;
 
@@ -14,8 +14,11 @@ public class FootballUI : MonoBehaviour {
         football = GetComponent<Football>();
 	}
 	
+    
 	// Update is called once per frame
 	public void UpdateScores () {
+        Debug.Log(football);
+        Debug.Log(football.teamList);
 		for(int i = 0; i < football.teamList.Count; i++) {
             Debug.Log(football.teamList[i].score.ToString());
             teamScores[i].text = football.teamList[i].score.ToString();

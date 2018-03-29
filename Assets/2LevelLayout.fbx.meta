@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: 058ead424a323dd42a222af859a8d50c
+timeCreated: 1522158681
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BirdHouse.002
+    100004: BirdHouseFloor
+    100006: BirdHouseHole
+    100008: BirdHousePorch
+    100010: Branch#1
+    100012: Branch#2
+    100014: Branch#3
+    100016: Bridge#1
+    100018: Cube.001
+    100020: Cube.002
+    100022: Door
+    100024: Line
+    100026: Pants
+    100028: Pants02
+    100030: Platform#1
+    100032: Platform#2
+    100034: RopeBridge#1.000
+    100036: RopeBridge#1.001
+    100038: Sock
+    100040: Sock02
+    100042: Tree#1
+    100044: Tree#2
+    100046: Tree#3
+    100048: TShirt
+    100050: Underwear
+    400000: //RootNode
+    400002: BirdHouse.002
+    400004: BirdHouseFloor
+    400006: BirdHouseHole
+    400008: BirdHousePorch
+    400010: Branch#1
+    400012: Branch#2
+    400014: Branch#3
+    400016: Bridge#1
+    400018: Cube.001
+    400020: Cube.002
+    400022: Door
+    400024: Line
+    400026: Pants
+    400028: Pants02
+    400030: Platform#1
+    400032: Platform#2
+    400034: RopeBridge#1.000
+    400036: RopeBridge#1.001
+    400038: Sock
+    400040: Sock02
+    400042: Tree#1
+    400044: Tree#2
+    400046: Tree#3
+    400048: TShirt
+    400050: Underwear
+    2100000: Material.005
+    2100002: Material.006
+    2100004: No Name
+    2100006: Material.004
+    2100008: Material.003
+    2100010: Material.002
+    2100012: Material.001
+    2100014: Material
+    2300000: BirdHouse.002
+    2300002: BirdHouseFloor
+    2300004: BirdHouseHole
+    2300006: BirdHousePorch
+    2300008: Branch#1
+    2300010: Branch#2
+    2300012: Branch#3
+    2300014: Bridge#1
+    2300016: Cube.001
+    2300018: Cube.002
+    2300020: Door
+    2300022: Line
+    2300024: Pants
+    2300026: Pants02
+    2300028: Platform#1
+    2300030: Platform#2
+    2300032: RopeBridge#1.000
+    2300034: RopeBridge#1.001
+    2300036: Sock
+    2300038: Sock02
+    2300040: Tree#1
+    2300042: Tree#2
+    2300044: Tree#3
+    2300046: TShirt
+    2300048: Underwear
+    3300000: BirdHouse.002
+    3300002: BirdHouseFloor
+    3300004: BirdHouseHole
+    3300006: BirdHousePorch
+    3300008: Branch#1
+    3300010: Branch#2
+    3300012: Branch#3
+    3300014: Bridge#1
+    3300016: Cube.001
+    3300018: Cube.002
+    3300020: Door
+    3300022: Line
+    3300024: Pants
+    3300026: Pants02
+    3300028: Platform#1
+    3300030: Platform#2
+    3300032: RopeBridge#1.000
+    3300034: RopeBridge#1.001
+    3300036: Sock
+    3300038: Sock02
+    3300040: Tree#1
+    3300042: Tree#2
+    3300044: Tree#3
+    3300046: TShirt
+    3300048: Underwear
+    4300000: BirdHousePorch
+    4300002: BirdHouseFloor
+    4300004: BirdHouseHole
+    4300006: Line
+    4300008: TShirt
+    4300010: Pants
+    4300012: Pants02
+    4300014: Sock02
+    4300016: Sock
+    4300018: Underwear
+    4300020: Cube.002
+    4300022: RopeBridge#1.000
+    4300024: RopeBridge#1.001
+    4300026: Door
+    4300028: BirdHouse.002
+    4300030: Cube.001
+    4300032: Tree#3
+    4300034: Tree#2
+    4300036: Tree#1
+    4300038: Branch#1
+    4300040: Branch#2
+    4300042: Branch#3
+    4300044: Bridge#1
+    4300046: Platform#2
+    4300048: Platform#1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
