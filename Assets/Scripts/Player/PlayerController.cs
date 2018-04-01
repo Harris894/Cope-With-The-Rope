@@ -106,7 +106,12 @@ public class PlayerController : MonoBehaviour {
             //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
             rb.mass = 15;
         }else {
-            rb.mass = 0.1f; 
+            rb.mass = 2f;
+            float upwards = rb.velocity.magnitude;
+            Debug.Log("" + upwards);
+            rb.AddForce(0, upwards, 0);
+               
+            
         }
 
         if (moveRelativeToCamera) {

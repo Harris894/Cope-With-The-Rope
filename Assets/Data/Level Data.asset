@@ -27,3 +27,6 @@ MonoBehaviour:
   - name: Moving platform
     sceneName: DEMO Moving platform cylinder
     thumb: {fileID: 0}
+  - name: Football Mode
+    sceneName: Football demo
+    thumb: {fileID: 0}
