@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868167706fc9b6b41bc091be11209789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damping: 0.02
+  m_Damping: 0.09
   controllerNumber: 1
 --- !u!206 &206346352075896552
 BlendTree:
@@ -72,7 +72,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 18eba2e8ba09c6c4c85b3524e71543b6, type: 3}
     m_Threshold: 0.20833333
-    m_Position: {x: -0.6, y: 0.6}
+    m_Position: {x: -0.707, y: 0.707}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal_f
@@ -80,7 +80,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 18eba2e8ba09c6c4c85b3524e71543b6, type: 3}
     m_Threshold: 0.3125
-    m_Position: {x: 0.6, y: 0.6}
+    m_Position: {x: 0.707, y: 0.707}
     m_TimeScale: 1
     m_CycleOffset: 0.5
     m_DirectBlendParameter: Horizontal_f
@@ -112,7 +112,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400006, guid: 18eba2e8ba09c6c4c85b3524e71543b6, type: 3}
     m_Threshold: 0.7291666
-    m_Position: {x: -0.66, y: -0.66}
+    m_Position: {x: -0.707, y: -0.707}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal_f
@@ -120,7 +120,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400006, guid: 18eba2e8ba09c6c4c85b3524e71543b6, type: 3}
     m_Threshold: 0.8333333
-    m_Position: {x: 0.66, y: -0.66}
+    m_Position: {x: 0.707, y: -0.707}
     m_TimeScale: 1
     m_CycleOffset: 0.5
     m_DirectBlendParameter: Horizontal_f
@@ -131,7 +131,7 @@ BlendTree:
   m_MaxThreshold: 0.8333333
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 2
 --- !u!1102 &1102665417721919978
 AnimatorState:
   serializedVersion: 5
