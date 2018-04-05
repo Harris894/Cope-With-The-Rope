@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour {
         }else {
             rb.mass = 2f;
             float upwards = rb.velocity.magnitude;
-            Debug.Log("" + upwards);
+            
             rb.AddForce(0, upwards, 0);
                
             
