@@ -17,7 +17,6 @@ public class FootballUI : MonoBehaviour {
     
 	// Update is called once per frame
 	public void UpdateScores () {
-        Debug.Log(football);
         Debug.Log(football.teamList);
 		for(int i = 0; i < football.teamList.Count; i++) {
             Debug.Log(football.teamList[i].score.ToString());

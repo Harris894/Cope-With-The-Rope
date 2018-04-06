@@ -25,7 +25,6 @@ public class Football : GameMode {
 
     private void Start() {
         OnEnter();
-        Debug.Log((Football)instance);
         footballUI = GetComponent<FootballUI>();
         StartNewMatch();
     }

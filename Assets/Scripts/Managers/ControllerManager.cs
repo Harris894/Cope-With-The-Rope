@@ -67,25 +67,26 @@ public class ControllerManager : MonoBehaviour {
     {
         int assignedControllerCount = 0;
         int assignedKeyboardCount = 0;
+        int count = 1;
         foreach(PlayerController entry in controllerList.Keys)
         {
-            Debug.Log("HI");
             if(assignedControllerCount < connectedControllerCount)
             {
                 entry.controllerNumber = assignedControllerCount + 1;
                 assignedControllerCount++;
                 entry.useController = true;
-                Debug.Log("Assing Controller");
+                Debug.Log(string.Format("Assigning Controller {0} to player {1}", assignedControllerCount, entry.gameObject.name));
             }
             else if(assignedKeyboardCount < 2)
             {
                 entry.controllerNumber = assignedKeyboardCount + 1;
                 assignedKeyboardCount++;
                 entry.useController = false;
-                Debug.Log("Assing Keyboard");
+                Debug.Log(string.Format("Assing Keyboard {0} to player {1}", assignedKeyboardCount, entry.gameObject.name));
             }
             else
             {
+                entry.enabled = false;
                 Debug.LogError(string.Format("Couldn't assign unique input device to PlayerController of object {0}", entry.gameObject.name));
             }
             //controllerList[entry] = entry.controllerNumber;
