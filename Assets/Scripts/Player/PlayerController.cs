@@ -79,17 +79,6 @@ public class PlayerController : MonoBehaviour {
                 rb.isKinematic = false;
             }
 
-            if (Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
-                //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
-                rb.mass = 15;
-            }
-            else {
-                rb.mass = 2f;
-                move.y = forceInAir.y;
-                float upwards = rb.velocity.magnitude;
-                //Debug.Log("" + upwards);
-                rb.AddForce(0, upwards, 0);
-            }
 
             if (moveRelativeToCamera) {
                 move = Camera.main.transform.rotation * move;
@@ -124,9 +113,5 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-    private bool IsGrounded()
-    {
-        return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
-            col.bounds.min.y, col.bounds.center.z), col.radius * .9f, groundLayers);
-    }
+    
 }

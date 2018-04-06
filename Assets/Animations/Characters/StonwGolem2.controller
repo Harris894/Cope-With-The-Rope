@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868167706fc9b6b41bc091be11209789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damping: 0.02
-  controllerNumber: 1
+  m_Damping: 0.09
+  controllerNumber: 2
 --- !u!206 &206346352075896552
 BlendTree:
   m_ObjectHideFlags: 1
