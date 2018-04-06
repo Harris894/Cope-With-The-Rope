@@ -128,16 +128,16 @@ public class PlayerController : MonoBehaviour {
     {
         //Vector3 newMove = new Vector3(cameraX, 0, move.y);
         rb.MovePosition(transform.position + move * speed * Time.deltaTime);
-        
+
         //rb.MovePosition((camRotation.forward + move.y) * speed * Time.deltaTime);
         //rb.MovePosition((camRotation.right + move.x) * speed * Time.deltaTime);
 
-        //if (move != Vector3.zero)
-        //{
-        //    Quaternion newRotation = Quaternion.LookRotation(move);
-        //    //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
-        //    rb.rotation = newRotation;
-        //}
+        if (move != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(move);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
+            rb.rotation = newRotation;
+        }
 
     }
 
