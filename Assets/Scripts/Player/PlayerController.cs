@@ -88,6 +88,15 @@ public class PlayerController : MonoBehaviour {
                 canMove = true;
                 rb.isKinematic = false;
             }
+            
+            if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers))
+            {
+                rb.mass = 15;
+            }
+            else
+            {
+                rb.mass = 2f;
+            }
 
 
             if (moveRelativeToCamera) {
@@ -97,9 +106,9 @@ public class PlayerController : MonoBehaviour {
 
             lastMoveDirection = move;
             Vector3 temp = transform.position + move;
-            temp.y = grabbingPointY;
+            //temp.y = grabbingPointY;
             throwingController.grabbingBox.transform.position = temp;
-            throwingController.SetBoxPosition(transform.position + move, true);
+            //throwingController.SetBoxPosition(transform.position + move, true);
         }
     }
 

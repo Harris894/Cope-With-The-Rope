@@ -41,7 +41,7 @@ public class ThrowingController : MonoBehaviour
             otherRB.AddForce(Vector3.up * throwForceVertical, ForceMode.Impulse);
             otherRB.AddForce(otherPlayer.lastMoveDirection * throwForceHorizontal, ForceMode.Impulse);
             //StartCoroutine(disableRopeKinematic());
-            //GetComponent<ObiRigidbody>().kinematicForParticles = false;
+            StartCoroutine(DisableRopeKinematic());
             otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
 
             otherPlayer = null;
@@ -79,11 +79,10 @@ public class ThrowingController : MonoBehaviour
         }
     }
 
-    IEnumerator disableRopeKinematic()
+    IEnumerator DisableRopeKinematic()
     {
         yield return new WaitForSeconds(1);
         GetComponent<ObiRigidbody>().kinematicForParticles = false;
-        otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
     }
 
 

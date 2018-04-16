@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2d17dda8380c0d54489bb5af6b3bad0a
-timeCreated: 1506042879
+guid: 7603938fb2ab6ae43a65bc6afd557a10
+timeCreated: 1505950541
 licenseType: Store
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: SM_Env_Rock_Round_04
+    4300000: SM_Env_Cave_Large_01
     9500000: //RootNode
   materials:
     importMaterials: 0
