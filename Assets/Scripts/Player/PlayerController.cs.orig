@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce;
     public LayerMask groundLayers;
     public Vector3 forceInAir;
-    public Vector3 lastMoveDirection;
 
     private bool canMove;
 
@@ -65,7 +64,7 @@ public class PlayerController : MonoBehaviour {
                 move = new Vector3(Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)), 0, Input.GetAxis(string.Format("Vertical{0}", controllerNumber)));
             }
 
-            if (Input.GetKeyDown(KeyCode.Q) && controllerNumber == 1) {
+            if (Input.GetKeyDown(KeyCode.E)) {
                 if (throwingController != null)
                     throwingController.Grab();
             }
@@ -80,13 +79,23 @@ public class PlayerController : MonoBehaviour {
                 rb.isKinematic = false;
             }
 
+            if (Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers)) {
+                //Debug.Log(string.Format("Player {0} IsGrounded",controllerNumber));
+                rb.mass = 15;
+            }
+            else {
+                rb.mass = 2f;
+                move.y = forceInAir.y;
+                float upwards = rb.velocity.magnitude;
+                //Debug.Log("" + upwards);
+                rb.AddForce(0, upwards, 0);
+            }
 
             if (moveRelativeToCamera) {
                 move = Camera.main.transform.rotation * move;
                 move.y = 0;
             }
 
-            lastMoveDirection = move;
             Vector3 temp = transform.position + move;
             temp.y = grabbingPointY;
             throwingController.grabbingBox.transform.position = temp;
