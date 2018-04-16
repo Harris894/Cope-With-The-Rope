@@ -54,6 +54,10 @@ public class PlayerController : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
 
+            if (Input.GetButtonDown(string.Format("A{0}", controllerNumber))) {
+                throwingController.Grab();
+            }
+
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
@@ -66,6 +70,11 @@ public class PlayerController : MonoBehaviour {
             }
 
             if (Input.GetKeyDown(KeyCode.Q) && controllerNumber == 1) {
+                if (throwingController != null)
+                    throwingController.Grab();
+            }
+
+            if (Input.GetKeyDown(KeyCode.RightControl) && controllerNumber == 2) {
                 if (throwingController != null)
                     throwingController.Grab();
             }
