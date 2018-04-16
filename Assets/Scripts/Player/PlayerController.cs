@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour {
             Vector3 temp = transform.position + move;
             temp.y = grabbingPointY;
             throwingController.grabbingBox.transform.position = temp;
-            //throwingController.SetBoxPosition(transform.position + move, true);
+            throwingController.SetBoxPosition(transform.position + move, true);
         }
     }
 

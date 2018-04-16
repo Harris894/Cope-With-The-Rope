@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Obi;
 using UnityEngine;
 
-public class ThrowingController : MonoBehaviour {
+public class ThrowingController : MonoBehaviour
+{
 
     public float throwForceHorizontal;
     public float throwForceVertical;
@@ -15,20 +16,25 @@ public class ThrowingController : MonoBehaviour {
     public ObiRope obiRope;
 
 
-    private void Start() {
+    private void Start()
+    {
         startPosition = transform.position;
     }
 
     // Update is called once per frame
-    void Update() {
-        if (isHolding) {
+    void Update()
+    {
+        if (isHolding)
+        {
             otherPlayer.transform.position = holdingPos.position;
         }
     }
 
-    public void Grab() {
+    public void Grab()
+    {
         //Throw
-        if (isHolding) {
+        if (isHolding)
+        {
             isHolding = false;
             Rigidbody otherRB = otherPlayer.GetComponent<Rigidbody>();
 
@@ -37,17 +43,19 @@ public class ThrowingController : MonoBehaviour {
             //StartCoroutine(disableRopeKinematic());
             //GetComponent<ObiRigidbody>().kinematicForParticles = false;
             otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
-            
+
             otherPlayer = null;
-            
-            
+
+
         }
         //Try grabbing
-        else {
-            if (grabbingBox.HasPlayer()) {
+        else
+        {
+            if (grabbingBox.HasPlayer())
+            {
                 isHolding = true;
                 //obiRope.enabled = false;
-                
+
                 otherPlayer = grabbingBox.GetPlayer();
                 otherPlayer.transform.position = holdingPos.position;
                 //obiRope.ResetActor();
@@ -58,20 +66,25 @@ public class ThrowingController : MonoBehaviour {
         }
     }
 
-    public void SetBoxPosition(Vector3 position, bool useOriginalYPos) {
-        if (useOriginalYPos) {
+    public void SetBoxPosition(Vector3 position, bool useOriginalYPos)
+    {
+        if (useOriginalYPos)
+        {
             position.y = startPosition.y;
             transform.position = position;
-        }else {
+        }
+        else
+        {
             transform.position = position;
         }
     }
 
-    IEnumerator disableRopeKinematic() {
+    IEnumerator disableRopeKinematic()
+    {
         yield return new WaitForSeconds(1);
         GetComponent<ObiRigidbody>().kinematicForParticles = false;
         otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
     }
-	
-	
+
+
 }
