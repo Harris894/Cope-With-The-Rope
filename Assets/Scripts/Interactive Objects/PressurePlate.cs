@@ -6,16 +6,24 @@ public class PressurePlate : MonoBehaviour {
 
     public LayerMask triggerLayers;
     Vector3 offset = new Vector3(0, 0.2f, 0);
+    public Collider collider;
 
     [HideInInspector]
     public bool isPressed;
-	
-	void Update () {
-        isPressed = Physics.CheckBox(transform.position + offset, transform.lossyScale * 0.5f,transform.rotation, triggerLayers) ? true : false;
+
+    private void Start() {
+        collider = GetComponent<Collider>();
+    }
+
+    void Update () {
+        isPressed = Physics.CheckBox(collider.bounds.center + offset, new Vector3(collider.bounds.size.x, 1, collider.bounds.size.y), transform.rotation, triggerLayers) ? true : false;
+        //isPressed = Physics.CheckBox(transform.position + offset, transform.lossyScale * 0.5f,transform.rotation, triggerLayers) ? true : false;
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawCube(transform.position + offset, transform.lossyScale);
+        //Gizmos.DrawCube(transform.position + offset, transform.lossyScale);
+        if(collider != null)
+        Gizmos.DrawCube(collider.bounds.center + offset, new Vector3(collider.bounds.size.x, 1, collider.bounds.size.y));
     }
 }
