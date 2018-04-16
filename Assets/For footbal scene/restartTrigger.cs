@@ -9,7 +9,7 @@ public class restartTrigger : MonoBehaviour {
     {
         if (other.gameObject.tag=="Ball")
         {
-            Football.instance.ResetBall();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
