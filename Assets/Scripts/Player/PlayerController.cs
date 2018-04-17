@@ -47,13 +47,6 @@ public class PlayerController : MonoBehaviour {
                 move.Set(Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber)), 0, Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber)));
             }
 
-            if (Input.GetButtonDown(string.Format("X{0}", controllerNumber))) {
-                rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-            }
-            else {
-                rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-            }
-
             if (Input.GetButtonDown(string.Format("A{0}", controllerNumber))) {
                 throwingController.Grab();
             }
@@ -124,7 +117,8 @@ public class PlayerController : MonoBehaviour {
         //rb.MovePosition((camRotation.forward + move.y) * speed * Time.deltaTime);
         //rb.MovePosition((camRotation.right + move.x) * speed * Time.deltaTime);
 
-        //if (move != Vector3.zero) {
+        //if (move != Vector3.zero)
+        //{
         //    Quaternion newRotation = Quaternion.LookRotation(move);
         //    //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.15f);
         //    rb.rotation = newRotation;
