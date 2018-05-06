@@ -54,12 +54,17 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
         else if (!useController) {
             if (canMove) {
                 //move.x = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber));
                 //move.y = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
-                move = new Vector3(Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)), 0, Input.GetAxis(string.Format("Vertical{0}", controllerNumber)));
+                move = new Vector3(Input.GetAxis(string.Format("Vertical{0}", controllerNumber)), 0, Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)) );
             }
 
             if (Input.GetKeyDown(KeyCode.Q) && controllerNumber == 1) {
@@ -82,19 +87,21 @@ public class PlayerController : MonoBehaviour {
                 rb.isKinematic = false;
             }
             
-            if(Physics.CheckBox(transform.position, Vector3.one * 0.5f, transform.rotation, groundLayers))
+            if(Physics.CheckBox(transform.position, Vector3.one * 1f, transform.rotation, groundLayers))
             {
                 rb.mass = 15;
             }
             else
             {
                 rb.mass = 2f;
+                float upwards = rb.velocity.magnitude*0.2f;
+                rb.AddForce(0, upwards, 0);
             }
 
 
             if (moveRelativeToCamera) {
                 move = Camera.main.transform.rotation * move;
-                move.y = 0;
+                //move.y = 0;
             }
 
             lastMoveDirection = move;
