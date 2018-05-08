@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 28a8e45ed3600f742b099b04aa55d942
-timeCreated: 1521635321
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -135,6 +133,7 @@ ModelImporter:
     4300042: Bridge#1
     4300044: Platform#2
     4300046: Platform#1
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -154,6 +153,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
