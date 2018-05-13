@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 4066b8163cc8bd64d847022a935c2cc0
   - enabled: 0
-    path: Assets/Scenes/DEMO.unity
-    guid: fcb9a258fdb414c4781983b4ba0f9e39
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Designers/Designers demo prototype.unity
     guid: aab815f865a98da4aa0fb8a29bb2a7a1
@@ -35,3 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle3.unity
     guid: 7cb6b77160ad2bb40a5a6e4f9693d14d
+  - enabled: 1
+    path: Assets/Scenes/Puzzle4.unity
+    guid: c3805d90aee72294da1053b76e051deb
+  - enabled: 1
+    path: Assets/Scenes/Cell.unity
+    guid: 75834ba5d0aabc0408db98c167c5fb09

@@ -18,3 +18,15 @@ MonoBehaviour:
   - name: Football mode
     sceneName: Football demo
     thumb: {fileID: 0}
+  - name: Puzzle 1
+    sceneName: Puzzle1
+    thumb: {fileID: 0}
+  - name: Puzzle 3
+    sceneName: Puzzle3
+    thumb: {fileID: 0}
+  - name: Puzzle 4
+    sceneName: Puzzle4
+    thumb: {fileID: 0}
+  - name: Cell
+    sceneName: Cell
+    thumb: {fileID: 0}
