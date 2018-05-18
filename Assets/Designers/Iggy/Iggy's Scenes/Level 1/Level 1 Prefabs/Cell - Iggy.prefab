@@ -939,25 +939,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1523145736729824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4173793750066370}
-  - component: {fileID: 33153983080470166}
-  - component: {fileID: 23139950684401444}
-  - component: {fileID: 65665154110457124}
-  - component: {fileID: 114098535321078008}
-  m_Layer: 0
-  m_Name: Cube (42)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1524004126068484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +2002,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1696366137532290}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.0943441, z: 0.9006548}
+  m_LocalPosition: {x: 0.23332596, y: 0.99699974, z: 0.9006548}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2034,7 +2015,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1095254191726364}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -1.5499992, z: 0.5}
+  m_LocalPosition: {x: 0.23332596, y: -1.49, z: 0.5}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2121,7 +2102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1296345851848166}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.9309988, z: 2.9926548}
+  m_LocalPosition: {x: 0.23332596, y: 1.81, z: 2.9926548}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2134,25 +2115,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627498528544836}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.9309988, z: 1.5976553}
+  m_LocalPosition: {x: 0.23332596, y: 1.8100004, z: 1.5976553}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!4 &4173793750066370
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523145736729824}
-  m_LocalRotation: {x: 0.21617855, y: 0.21617855, z: 0.673251, w: 0.673251}
-  m_LocalPosition: {x: 25.76, y: 4.5, z: 8.28}
-  m_LocalScale: {x: 7.1683836, y: 1.0000005, z: 8.694077}
-  m_Children: []
-  m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 45
-  m_LocalEulerAnglesHint: {x: 0, y: 35.603, z: 90.00001}
 --- !u!4 &4182419256198150
 Transform:
   m_ObjectHideFlags: 1
@@ -2238,7 +2206,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1266338280178230}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -0.5656557, z: 3.7176547}
+  m_LocalPosition: {x: 0.23332596, y: -0.66499996, z: 3.7176547}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2268,7 +2236,7 @@ Transform:
   m_LocalScale: {x: 6.8647137, y: 1.0000005, z: 2.970565}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4226246864416424
 Transform:
@@ -2281,7 +2249,7 @@ Transform:
   m_LocalScale: {x: 7.1683636, y: 1.0000005, z: 11.603149}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4231872450715316
 Transform:
@@ -2316,7 +2284,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1701651015556864}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.923, z: 0.5}
+  m_LocalPosition: {x: 0.23332596, y: 1.8020016, z: 0.5}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2328,8 +2296,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1837171887677214}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05000019, y: 2.5856562, z: 0.28999996}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 18.23, y: 2.14, z: -45.319706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4127461892022326}
@@ -2377,7 +2345,6 @@ Transform:
   - {fileID: 4948033621384362}
   - {fileID: 4428038795011896}
   - {fileID: 4907410950867420}
-  - {fileID: 4173793750066370}
   - {fileID: 4226246864416424}
   - {fileID: 4924731222563796}
   - {fileID: 4713955800411920}
@@ -2385,7 +2352,7 @@ Transform:
   - {fileID: 4224726266422646}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4257168779450598
 Transform:
   m_ObjectHideFlags: 1
@@ -2445,7 +2412,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1413223389203742}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 2.7553434, z: 3.7176552}
+  m_LocalPosition: {x: 0.23332596, y: 2.6329985, z: 3.7176552}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2614,7 +2581,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1058599313424906}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -1.5499992, z: 4.1036544}
+  m_LocalPosition: {x: 0.23332596, y: -1.479, z: 4.1036544}
   m_LocalScale: {x: 0.7509009, y: 1, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2627,7 +2594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498275347330420}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.9229994, z: 4.1036544}
+  m_LocalPosition: {x: 0.23332596, y: 1.802001, z: 4.1036544}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2653,7 +2620,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1503345333509968}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -0.5656557, z: 0.9006548}
+  m_LocalPosition: {x: 0.23332596, y: -0.66499996, z: 0.9006548}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2679,7 +2646,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830528314590742}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 0.2699995, z: 1.5976553}
+  m_LocalPosition: {x: 0.23332596, y: 0.154, z: 1.5976553}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2744,7 +2711,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1809759650402878}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -0.5656557, z: 2.3226547}
+  m_LocalPosition: {x: 0.23332596, y: -0.665, z: 2.3226547}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2809,7 +2776,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1323161411787686}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.0943441, z: 2.3226547}
+  m_LocalPosition: {x: 0.23332596, y: 0.997, z: 2.3226547}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2822,7 +2789,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1119633825181514}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 0.26200008, z: 4.1036544}
+  m_LocalPosition: {x: 0.23332596, y: 0.14600086, z: 4.1036544}
   m_LocalScale: {x: 0.7509009, y: 1, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2848,7 +2815,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1128692770480580}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: -1.4499998, z: 2.9926553}
+  m_LocalPosition: {x: 0.23332596, y: -1.491, z: 2.9926553}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2926,7 +2893,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952305068426666}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 1.0943441, z: 3.7176547}
+  m_LocalPosition: {x: 0.23332596, y: 0.99699974, z: 3.7176547}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2956,7 +2923,7 @@ Transform:
   m_LocalScale: {x: 3.052679, y: 1.0000005, z: -2.961657}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4722545801011314
 Transform:
@@ -2965,7 +2932,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336496861039416}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 0.26200104, z: 0.5}
+  m_LocalPosition: {x: 0.23332596, y: 0.14600182, z: 0.5}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 0.61462}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -2978,7 +2945,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1468764370757426}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 2.7553434, z: 2.3226547}
+  m_LocalPosition: {x: 0.23332596, y: 2.6329985, z: 2.3226547}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -3004,7 +2971,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1065137957833558}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 0.2699995, z: 2.9926553}
+  m_LocalPosition: {x: 0.23332596, y: 0.15400028, z: 2.9926553}
   m_LocalScale: {x: 0.7509009, y: 1, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -3056,7 +3023,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660253032025196}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.23332596, y: 2.7553434, z: 0.9006548}
+  m_LocalPosition: {x: 0.23332596, y: 2.633, z: 0.9006548}
   m_LocalScale: {x: 0.75090045, y: 1.0000005, z: 1.21797}
   m_Children: []
   m_Father: {fileID: 4966461889638628}
@@ -3177,7 +3144,7 @@ Transform:
   m_LocalScale: {x: 6.8647084, y: 1.0000005, z: 2.7402494}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4920330580755126
 Transform:
@@ -3203,7 +3170,7 @@ Transform:
   m_LocalScale: {x: 4.044892, y: 1.0000005, z: 3.781508}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4948033621384362
 Transform:
@@ -3213,7 +3180,7 @@ Transform:
   m_GameObject: {fileID: 1776153983403648}
   m_LocalRotation: {x: -0, y: -0, z: -0.29878247, w: 0.95432127}
   m_LocalPosition: {x: 3.14, y: 4.54, z: 12.53}
-  m_LocalScale: {x: -14.214862, y: 1, z: 2.05035}
+  m_LocalScale: {x: 14.21486, y: 1, z: 2.05035}
   m_Children: []
   m_Father: {fileID: 4254441891826522}
   m_RootOrder: 42
@@ -3624,41 +3591,6 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 81508624ed0d51b4e893df1217467e1e, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!23 &23139950684401444
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523145736729824}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 5280819cd22a3dd4ab03f59b4613dbd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6653,13 +6585,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1018205237557508}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &33153983080470166
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523145736729824}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33174301097864164
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -8714,18 +8639,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65665154110457124
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523145736729824}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65667408577167710
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -9087,7 +9000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65508889390064306}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9104,7 +9017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65586647998793458}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9121,7 +9034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65688251074086944}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9150,7 +9063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65367240206448110}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9167,7 +9080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65659701325319072}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9196,7 +9109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65025133077859862}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9213,7 +9126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65593070699592298}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9230,7 +9143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65869116577996516}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9247,7 +9160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65820001545683970}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9264,7 +9177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65048211949570586}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9305,7 +9218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65217145870058004}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9333,23 +9246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kinematicForParticles: 0
---- !u!114 &114098535321078008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523145736729824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  phase: 0
-  thickness: 0
-  unityCollider: {fileID: 65665154110457124}
-  useDistanceFields: 0
-  distanceField: {fileID: 0}
 --- !u!114 &114102688272099124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9363,7 +9259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65637883557324802}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9380,7 +9276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65395704084114848}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9397,7 +9293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65127949168452980}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9438,7 +9334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65951633007402204}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9467,7 +9363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65036318008387460}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9484,7 +9380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65767009281668962}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9501,7 +9397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65752099465359716}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9518,7 +9414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65028287607634186}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9535,7 +9431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65144609638180974}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9552,7 +9448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65383222299554192}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9581,7 +9477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65334377105091270}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9610,7 +9506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65701677187193386}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9639,7 +9535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65658099957881152}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9656,7 +9552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65230625362782488}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9673,7 +9569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65220567367624108}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9690,7 +9586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65571222636694900}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9707,7 +9603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65409401922886850}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9724,7 +9620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65819322019874888}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9741,7 +9637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65161048562277716}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9782,7 +9678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65670595341653236}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9811,7 +9707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65483912842845076}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9828,7 +9724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65209009916879584}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9869,7 +9765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65833793818262364}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9886,7 +9782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65479669216937488}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9903,7 +9799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65117338527993222}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9920,7 +9816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65143078534535970}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9937,7 +9833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65410643137982140}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9954,7 +9850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65044542980979560}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9971,7 +9867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65098474550449262}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -9988,7 +9884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65898563438590626}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10017,7 +9913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65959145845544622}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10034,7 +9930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65579156826496256}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10051,7 +9947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65594136133440484}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10068,7 +9964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65124104684490302}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10097,7 +9993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65678669059487278}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10126,7 +10022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65990653212223708}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10143,7 +10039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65426330915555786}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10172,7 +10068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65219991429477960}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10201,7 +10097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65876684460691184}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10218,7 +10114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65951321252178350}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10247,7 +10143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65052951321857816}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10336,7 +10232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65936282024964158}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10353,7 +10249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65600464385929588}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10370,7 +10266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65153556003617182}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10387,7 +10283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65412946126955892}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10404,7 +10300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65562595273408770}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10445,7 +10341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65603693353064018}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10462,7 +10358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65300129262518724}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10479,7 +10375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65241229858402772}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10496,7 +10392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65053098247948388}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10513,7 +10409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65982824486299654}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10530,7 +10426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65002580166042454}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10559,7 +10455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65205998219525452}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10588,7 +10484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65655466820969150}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10617,7 +10513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65957624783947398}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10646,7 +10542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65114180557176614}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10663,7 +10559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65832624293068968}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10680,7 +10576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65883022943690190}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10721,7 +10617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65767255167836724}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10750,7 +10646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65208330438727486}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10767,7 +10663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65339878732197468}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10796,7 +10692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65863762192125208}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10813,7 +10709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65398332716459042}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10830,7 +10726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65588788871619744}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10847,7 +10743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65786645801977520}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10876,7 +10772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65313592753829278}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10905,7 +10801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65013967060449892}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10922,7 +10818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65725000469017592}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10939,7 +10835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65060715412616950}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10956,7 +10852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65228014306562266}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -10973,7 +10869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65303212899437110}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11002,7 +10898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65772355693947158}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11031,7 +10927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65157821178864434}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11060,7 +10956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65628364082095516}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11077,7 +10973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65052195498175168}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11094,7 +10990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65935248516097860}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11111,7 +11007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65493095156453652}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11152,7 +11048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65619586067463374}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11169,7 +11065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65021064925126434}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11186,7 +11082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65315182438797144}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11203,7 +11099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65667408577167710}
   useDistanceFields: 0
   distanceField: {fileID: 0}
@@ -11232,7 +11128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   phase: 0
-  thickness: 0
+  thickness: 0.45
   unityCollider: {fileID: 65839981981339710}
   useDistanceFields: 0
   distanceField: {fileID: 0}
