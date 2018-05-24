@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Obi;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class ThrowingController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class ThrowingController : MonoBehaviour
     PlayerController otherPlayer;
     Vector3 startPosition;
     public ObiRope obiRope;
+
+    private static int timesGrabbed;
 
 
     private void Start()
@@ -62,6 +65,12 @@ public class ThrowingController : MonoBehaviour
                 obiRope.UpdateParticlePhases();
                 GetComponent<ObiRigidbody>().kinematicForParticles = true;
                 otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = true;
+
+                //Unity anal
+                AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
+                   {
+                    { "Times_grabbed", timesGrabbed }
+                });
             }
         }
     }

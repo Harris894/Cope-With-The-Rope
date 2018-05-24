@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour {
             if (canMove) {
                 //move.x = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber));
                 //move.y = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
-                move = new Vector3(Input.GetAxis(string.Format("Vertical{0}", controllerNumber)), 0, Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)) );
+                move = new Vector3(Input.GetAxis(string.Format("VerticalOLD{0}", controllerNumber)), 0, Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)) );
             }
 
             if (Input.GetKeyDown(KeyCode.Q) && controllerNumber == 1) {

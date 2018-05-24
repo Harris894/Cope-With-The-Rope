@@ -26,16 +26,7 @@ public class MovingObject : MonoBehaviour {
             rb.velocity = direction;
             //Debug.Log(Vector3.Distance(transform.position, nodeList[currentNode].transform.position));
             if (Vector3.Distance(transform.position, nodeList[currentNode].transform.position) < distanceMargin) {
-                Debug.Log("Close enuf");
-                //if (currentNode == nodeList.Count - 1)
-                //{
-                //    Debug.Log("Currentnode = 0");
-                //    currentNode = 0;
-                //}
-                //else {
-                //    Debug.Log("Currentnode++");
-                //    currentNode++;
-                //}
+                //Debug.Log("Close enuf");
                 currentNode = currentNode == nodeList.Count - 1 ? 0 : currentNode + 1;
 
             }
