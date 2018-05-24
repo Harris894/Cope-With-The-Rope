@@ -7,6 +7,7 @@ public class WallDetection : MonoBehaviour
 
     private RayCaster wallRay;
     public Transform playerPos;
+
     MeshRenderer wall;
 
     void Start()

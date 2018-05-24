@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour {
     ThrowingController throwingController;
     float grabbingPointY;
 
+    public GameObject otherPlayer;
+    public bool useDistanceLimit;
+    public float distanceLimit;
+
     private void Awake() {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
@@ -109,6 +113,17 @@ public class PlayerController : MonoBehaviour {
             //temp.y = grabbingPointY;
             throwingController.grabbingBox.transform.position = temp;
             //throwingController.SetBoxPosition(transform.position + move, true);
+            if (useDistanceLimit) {
+                if (Vector3.Distance(transform.position + move, otherPlayer.transform.position) < distanceLimit) {
+                    rb.MovePosition(transform.position + move * speed * Time.deltaTime);
+                }
+                else {
+                    rb.MovePosition(transform.position + (otherPlayer.transform.position - transform.position).normalized * Time.deltaTime);
+                }
+            }
+            else {
+                rb.MovePosition(transform.position + move * speed * Time.deltaTime);
+            }
         }
     }
 
@@ -119,7 +134,7 @@ public class PlayerController : MonoBehaviour {
     private void FixedUpdate()
     {
         //Vector3 newMove = new Vector3(cameraX, 0, move.y);
-        rb.MovePosition(transform.position + move * speed * Time.deltaTime);
+        //rb.MovePosition(transform.position + move * speed * Time.deltaTime);
 
         //rb.MovePosition((camRotation.forward + move.y) * speed * Time.deltaTime);
         //rb.MovePosition((camRotation.right + move.x) * speed * Time.deltaTime);
