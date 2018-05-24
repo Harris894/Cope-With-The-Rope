@@ -14,6 +14,7 @@ public class CameraFollow : MonoBehaviour {
         if(targets.Count > 0) {
             Vector3 targetTransform = Vector3.zero;
             foreach (Transform target in targets) {
+                if(target != null)
                 targetTransform += target.transform.position;
             }
             targetTransform = targetTransform / targets.Count;
