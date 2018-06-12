@@ -16,17 +16,17 @@ public class GrabbingBox : MonoBehaviour {
 
     public bool HasPlayer() {
         foreach(GameObject go in objectsInTrigger) {
-            if (go.GetComponent<PlayerController>()) {
+            if (go.GetComponent<ProPlayerController>()) {
                 return true;
             }
         }
         return false;
     }
 
-    public PlayerController GetPlayer() {
+    public ProPlayerController GetPlayer() {
         foreach (GameObject go in objectsInTrigger) {
-            if (go.GetComponent<PlayerController>()) {
-                return go.GetComponent<PlayerController>();
+            if (go.GetComponent<ProPlayerController>()) {
+                return go.GetComponent<ProPlayerController>();
             }
         }
         return null;
