@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using UnityEngine.Analytics;
+using GameAnalyticsSDK;
 using UnityEngine;
 
 public class Restart : MonoBehaviour {
@@ -11,11 +11,13 @@ public class Restart : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Backspace)) {
             restartCount++;
-            AnalyticsEvent.Custom("Restarts", new Dictionary<string, object>
-            {
-                { "Restart_count", restartCount }
-            });
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 	}
+
+    private void OnApplicationQuit()
+    {
+        GameAnalytics.NewDesignEvent("Times_Restarted", restartCount);
+    }
 }

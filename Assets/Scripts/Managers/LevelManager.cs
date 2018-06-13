@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GameAnalyticsSDK;
 
 public class LevelManager : MonoBehaviour {
 
@@ -10,7 +11,8 @@ public class LevelManager : MonoBehaviour {
 
 	void Awake () {
         instance = this;
-	}
+        GameAnalytics.Initialize();
+    }
 	
 	// Update is called once per frame
 	void Update () {

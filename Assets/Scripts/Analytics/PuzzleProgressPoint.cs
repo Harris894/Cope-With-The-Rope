@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.Analytics;
 using UnityEngine;
+using GameAnalyticsSDK;
 
 public class PuzzleProgressPoint : MonoBehaviour {
 
@@ -10,7 +11,8 @@ public class PuzzleProgressPoint : MonoBehaviour {
     private float startTime;
     private float endTime;
     private bool pointPassed = false;
-    
+    public int timesGrabbed;
+
 
 
     private void OnTriggerEnter(Collider other) {
@@ -33,10 +35,13 @@ public class PuzzleProgressPoint : MonoBehaviour {
             Debug.Log("EXIT POINT");
             endTime = Time.time - startTime;
             GetComponent<Collider>().enabled = false;
-            AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
-            {
-            { puzzleName, endTime }
-        });
+        //    AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
+        //    {
+        //    { puzzleName, endTime }
+        //});
+
+            GameAnalytics.NewDesignEvent(PuzzleProgressManager.instance.eventName + "-" + puzzleName, endTime);
+            GameAnalytics.NewDesignEvent("Times_Grabbed", timesGrabbed);
         }
     }
 }

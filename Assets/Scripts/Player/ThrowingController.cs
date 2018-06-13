@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using Obi;
 using UnityEngine;
-using UnityEngine.Analytics;
+using GameAnalyticsSDK;
 
 public class ThrowingController : MonoBehaviour
 {
-
+    
     public float throwForceHorizontal;
     public float throwForceVertical;
     public GrabbingBox grabbingBox;
     public Transform holdingPos;
     public bool isHolding;
-    PlayerController otherPlayer;
+    public PlayerController otherPlayer;
     Vector3 startPosition;
     public ObiRope obiRope;
 
-    private static int timesGrabbed;
+    public int timesGrabbed;
+    public PuzzleProgressPoint progressPoint;
 
 
     private void Start()
     {
         startPosition = transform.position;
+        
+        //progressPoint = GetComponent<PuzzleProgressPoint>();
     }
 
     // Update is called once per frame
@@ -67,10 +70,12 @@ public class ThrowingController : MonoBehaviour
                 otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = true;
 
                 //Unity anal
-                AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
-                   {
-                    { "Times_grabbed", timesGrabbed }
-                });
+                //AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
+                //   {
+                //    { "Times_grabbed", timesGrabbed }
+                //});
+                progressPoint.timesGrabbed++;
+
             }
         }
     }

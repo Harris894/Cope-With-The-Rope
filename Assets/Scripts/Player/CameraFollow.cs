@@ -13,13 +13,16 @@ public class CameraFollow : MonoBehaviour {
 	void Update () {
         if(targets.Count > 0) {
             Vector3 targetTransform = Vector3.zero;
+            Quaternion targetRotation=Quaternion.identity;
             foreach (Transform target in targets) {
                 if(target != null)
                 targetTransform += target.transform.position;
+                targetRotation = Quaternion.LookRotation(target.transform.position - transform.position);
             }
             targetTransform = targetTransform / targets.Count;
-
-            transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, time);
+            
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, time * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, time * Time.deltaTime);
             transform.LookAt(targetTransform);
         }
 	}

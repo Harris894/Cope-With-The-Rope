@@ -23,27 +23,30 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DEMO Moving platform cylinder.unity
     guid: a656c03eb232aaa4c8c548d89d92dd59
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Football demo.unity
     guid: c8570e6b4bc451d41b6f05ed8e69f7a6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Courtyard.unity
     guid: 3edcfe0ea61fb2c42afa7a4ebfa4f550
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle1.unity
     guid: d55d18c496c5cbb4c858942321c76a66
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle3.unity
     guid: 7cb6b77160ad2bb40a5a6e4f9693d14d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle4.unity
     guid: c3805d90aee72294da1053b76e051deb
+  - enabled: 1
+    path: Assets/Designers/Iggy/Iggy's Scenes/Level 1/Level 1 Part 1 - Iggy - Cell.unity
+    guid: 42a54afbd873df64fa6bdbe2794ef0d4
   - enabled: 1
     path: Assets/Designers/Iggy/Iggy's Scenes/Level 1/Level 1 Part 3 - Iggy - Boxes.unity
     guid: 0de6b36f3faa11946a5d8fa750670e5d
   - enabled: 1
     path: Assets/Designers/Iggy/Iggy's Scenes/Level 1/Level 1 Part 5 - Iggy - Platforms.unity
     guid: ce87920a05e66004d87f8cbdbb9337a0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cell.unity
     guid: 75834ba5d0aabc0408db98c167c5fb09

@@ -111,5 +111,16 @@ public class ProPlayerController : MonoBehaviour {
             rb.MovePosition(transform.position + lastMoveDirection + (move * airMovementPenalty));
         }
 
+        //RotateIfNewDirection(move);
+
     }
+
+    private void RotateIfNewDirection(Vector3 input)
+    {
+        if (input.magnitude < 0.01f)
+            return;
+
+        rb.rotation = Quaternion.LookRotation(input);
+    }
+
 }

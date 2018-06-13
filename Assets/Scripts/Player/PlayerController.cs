@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GameAnalyticsSDK;
 
 public class PlayerController : MonoBehaviour {
 
@@ -31,6 +32,8 @@ public class PlayerController : MonoBehaviour {
     public bool useDistanceLimit;
     public float distanceLimit;
 
+    public GameObject pauseCanvas;
+
     private void Awake() {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
@@ -57,11 +60,21 @@ public class PlayerController : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameAnalytics.NewDesignEvent("Times_Restarted", 1);
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene(0);
+                if (pauseCanvas.activeInHierarchy)
+                {
+                    pauseCanvas.SetActive(false);
+                }
+                else
+                {
+                    pauseCanvas.SetActive(true);
+                }
+                pauseCanvas.SetActive(true);
+                
             }
         }
         else if (!useController) {
@@ -90,8 +103,14 @@ public class PlayerController : MonoBehaviour {
                 canMove = true;
                 rb.isKinematic = false;
             }
-            
-            if(Physics.CheckBox(transform.position, Vector3.one * 1f, transform.rotation, groundLayers))
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+                GameAnalytics.NewDesignEvent("Times_Restarted", 1);
+            }
+
+            if (Physics.CheckBox(transform.position, Vector3.one * 1f, transform.rotation, groundLayers))
             {
                 rb.mass = 15;
             }

@@ -14,8 +14,8 @@ public class LocomotionSMB : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-          float horizontal = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
-          float vertical = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)); 
+          float vertical = Input.GetAxis(string.Format("Vertical{0}", controllerNumber));
+          float horizontal = Input.GetAxis(string.Format("Horizontal{0}", controllerNumber)); 
 
         //float horizontal = Input.GetAxis(string.Format("Left Stick X {0}", controllerNumber));
         //float vertical = Input.GetAxis(string.Format("Left Stick Y {0}", controllerNumber));
