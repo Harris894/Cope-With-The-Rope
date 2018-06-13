@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using Obi;
 using UnityEngine;
-using GameAnalyticsSDK;
+using UnityEngine.Analytics;
 
 public class ThrowingController : MonoBehaviour
 {
-    
+
+    [Header("Physics")]
     public float throwForceHorizontal;
     public float throwForceVertical;
+
+    [Header("Debug")]
+    public bool isHolding;
+    public ThrowingController carrier;
+    
+    [Header("References")]
     public GrabbingBox grabbingBox;
     public Transform holdingPos;
-    public bool isHolding;
-    public PlayerController otherPlayer;
-    Vector3 startPosition;
     public ObiRope obiRope;
+    public ProPlayerController otherPlayer;
 
-    public int timesGrabbed;
-    public PuzzleProgressPoint progressPoint;
+    Vector3 startPosition;
+    
+
+    private static int timesGrabbed;
 
 
     private void Start()
     {
         startPosition = transform.position;
-        
-        //progressPoint = GetComponent<PuzzleProgressPoint>();
     }
 
     // Update is called once per frame
@@ -36,48 +41,58 @@ public class ThrowingController : MonoBehaviour
         }
     }
 
-    public void Grab()
-    {
+    public void Grab() {
         //Throw
-        if (isHolding)
-        {
-            isHolding = false;
+        if (carrier != null) {
+            Debug.Log("Release");
+
+            carrier.Throw(GetComponent<Rigidbody>(), 0f, 0f);
+            
+            return;
+        }
+
+        if (isHolding) {
+            Debug.Log("Throw");
+            
             Rigidbody otherRB = otherPlayer.GetComponent<Rigidbody>();
-
-            otherRB.AddForce(Vector3.up * throwForceVertical, ForceMode.Impulse);
-            otherRB.AddForce(otherPlayer.lastMoveDirection * throwForceHorizontal, ForceMode.Impulse);
-            //StartCoroutine(disableRopeKinematic());
-            StartCoroutine(DisableRopeKinematic());
-            otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
-
-            otherPlayer = null;
-
-
+            Throw(otherRB, throwForceVertical, throwForceHorizontal);
         }
         //Try grabbing
-        else
-        {
-            if (grabbingBox.HasPlayer())
-            {
+        else {
+            if (grabbingBox.HasPlayer()) {
+                Debug.Log("Grab");
                 isHolding = true;
                 //obiRope.enabled = false;
-
                 otherPlayer = grabbingBox.GetPlayer();
+                otherPlayer.GetComponent<ThrowingController>().carrier = this;
                 otherPlayer.transform.position = holdingPos.position;
                 //obiRope.ResetActor();
-                obiRope.UpdateParticlePhases();
+                //obiRope.UpdateParticlePhases();
                 GetComponent<ObiRigidbody>().kinematicForParticles = true;
                 otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = true;
 
                 //Unity anal
-                //AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
-                //   {
-                //    { "Times_grabbed", timesGrabbed }
-                //});
-                progressPoint.timesGrabbed++;
-
+                if (PuzzleProgressManager.instance != null) {
+                    AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
+                       {
+                        { "Times_grabbed", timesGrabbed }
+                        });
+                }
             }
         }
+    }
+
+    public void Throw(Rigidbody otherRB, float verticalForce, float horizontalForce){
+
+        otherRB.AddForce(Vector3.up * verticalForce, ForceMode.Impulse);
+        otherRB.AddForce(otherPlayer.lastMoveDirection * horizontalForce, ForceMode.Impulse);
+        //StartCoroutine(disableRopeKinematic());
+        StartCoroutine(DisableRopeKinematic());
+        otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;
+        otherRB.GetComponent<ThrowingController>().carrier = null;
+
+        isHolding = false;
+        otherPlayer = null;
     }
 
     public void SetBoxPosition(Vector3 position, bool useOriginalYPos)

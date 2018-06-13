@@ -15,6 +15,7 @@ public class ProPlayerController : MonoBehaviour {
     public float jumpPower;
     public float jumpCooldown;
     public float airMovementPenalty;
+    public float airDashPower;
     [Range(0,4)]
     public float gravityMultiplier;
     public LayerMask groundLayers;
@@ -22,7 +23,7 @@ public class ProPlayerController : MonoBehaviour {
     [Header("Debug")]
     [SerializeField]
     private bool inAir;
-    private float lastJumpTime;
+    private float lastJumpTime = 0;
     private bool canMove;
     private Vector3 move;
 
@@ -31,18 +32,26 @@ public class ProPlayerController : MonoBehaviour {
     [SerializeField] Transform cam;
     Rigidbody rb;
     ProUserInput proUserInput;
+    ThrowingController throwingController;
     Collider characterCollider;
-    Vector3 lastMoveDirection;
+
+    
+
+    [Header("Other")]
+    public Vector3 lastMoveDirection;
 
 
     //Input
     float i_jump;
     float i_moveForward, i_moveRight;
+    bool i_primaryAction, i_secondaryAction;
 
-    public void SendInput(float jump, float moveForward, float moveRight) {
+    public void SendInput(float jump, float moveForward, float moveRight, bool primaryAction, bool secondaryAction) {
         i_jump = jump;
         i_moveForward = moveForward;
         i_moveRight = moveRight;
+        i_primaryAction = primaryAction;
+        i_secondaryAction = secondaryAction;
     }
 
     // Use this for initialization
@@ -50,6 +59,7 @@ public class ProPlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         characterCollider = GetComponent<Collider>();
         proUserInput = GetComponent<ProUserInput>();
+        throwingController = GetComponent<ThrowingController>();
 	}
 	
 	// Update is called once per frame
@@ -84,21 +94,34 @@ public class ProPlayerController : MonoBehaviour {
             inAir = true;
         }
 
-        //front hit test
+        //front hit test 
+        bool airHit = false;
         RaycastHit hit;
-        Debug.DrawRay(characterCollider.bounds.center, transform.forward, Color.magenta);
-        if(Physics.Raycast(characterCollider.bounds.center,transform.forward, out hit, 10f, groundLayers)) {
-            //Debug.Log(hit.transform.name);
+        //Debug.DrawRay(characterCollider.bounds.center, transform.position + move.normalized, Color.magenta);
+        Debug.DrawRay(characterCollider.bounds.center, move * 10, Color.magenta);
+        if(Physics.Raycast(characterCollider.bounds.center, move * 10, out hit, 10f, groundLayers)) {
+            if (inAir) {
+                airHit = true;
+            }
         }
         
+
+        if(i_primaryAction) {
+            Debug.Log("Primary Action");
+            if(throwingController != null)
+            throwingController.Grab();
+        }
 
         //Jumping
         if (i_jump > 0 && !inAir && Time.time > lastJumpTime + jumpCooldown) {
             rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
+            lastJumpTime = Time.time;
         }
-        //Air nudge
-        else if(inAir && lastJumpTime - jumpCooldown > Time.time) {
-            rb.AddForce(move, ForceMode.Impulse);
+        //Airdash
+        else if (i_jump > 0 && inAir && Time.time > lastJumpTime + jumpCooldown) {
+            rb.AddForce((Vector3.up * 0.1f + move) * airDashPower, ForceMode.Impulse);
+            lastJumpTime = Time.time;
+            Debug.Log("Air dash");
         }
 
         //Apply the movement to the object
@@ -108,19 +131,14 @@ public class ProPlayerController : MonoBehaviour {
         }
         else {
             //rb.MovePosition(transform.position + lastMoveDirection);
-            rb.MovePosition(transform.position + lastMoveDirection + (move * airMovementPenalty));
+            if(!airHit) {
+                rb.MovePosition(transform.position + lastMoveDirection + (move * airMovementPenalty));
+            }
+           
         }
 
-        //RotateIfNewDirection(move);
+        //Position the grabbing box
+        throwingController.grabbingBox.transform.position = (transform.position + move.normalized);
 
     }
-
-    private void RotateIfNewDirection(Vector3 input)
-    {
-        if (input.magnitude < 0.01f)
-            return;
-
-        rb.rotation = Quaternion.LookRotation(input);
-    }
-
 }
