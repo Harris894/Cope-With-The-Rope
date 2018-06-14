@@ -42,18 +42,16 @@ public class ThrowingController : MonoBehaviour
     }
 
     public void Grab() {
-        //Throw
-        if (carrier != null) {
+        //Release
+        if (carrier != null)
+        {
             Debug.Log("Release");
-
             carrier.Throw(GetComponent<Rigidbody>(), 0f, 0f);
-            
             return;
         }
 
         if (isHolding) {
             Debug.Log("Throw");
-            
             Rigidbody otherRB = otherPlayer.GetComponent<Rigidbody>();
             Throw(otherRB, throwForceVertical, throwForceHorizontal);
         }
@@ -68,16 +66,11 @@ public class ThrowingController : MonoBehaviour
                 otherPlayer.transform.position = holdingPos.position;
                 //obiRope.ResetActor();
                 //obiRope.UpdateParticlePhases();
+                otherPlayer.GetComponent<Rigidbody>().isKinematic = true;
                 GetComponent<ObiRigidbody>().kinematicForParticles = true;
                 otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = true;
 
-                //Unity anal
-                if (PuzzleProgressManager.instance != null) {
-                    AnalyticsEvent.Custom(PuzzleProgressManager.instance.eventName, new Dictionary<string, object>
-                       {
-                        { "Times_grabbed", timesGrabbed }
-                        });
-                }
+                
             }
         }
     }
@@ -86,6 +79,7 @@ public class ThrowingController : MonoBehaviour
 
         otherRB.AddForce(Vector3.up * verticalForce, ForceMode.Impulse);
         otherRB.AddForce(otherPlayer.lastMoveDirection * horizontalForce, ForceMode.Impulse);
+        otherRB.isKinematic = false;
         //StartCoroutine(disableRopeKinematic());
         StartCoroutine(DisableRopeKinematic());
         otherPlayer.GetComponent<ObiRigidbody>().kinematicForParticles = false;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 //USed solely for it's type at the moment.
 [RequireComponent(typeof(CanvasGroup))]
@@ -13,8 +14,12 @@ public class Panel : MonoBehaviour
      private Selectable firstSelectedElement;
 
     public virtual void OnEnter() {
+        gameObject.SetActive(true);
         if(firstSelectedElement != null)
-        uiManager.eventSystem.SetSelectedGameObject(firstSelectedElement.gameObject);
+        {
+            Debug.Log("Set first selected element");
+            uiManager.eventSystem.SetSelectedGameObject(firstSelectedElement.gameObject);
+        }
     }
 
     public virtual void OnUpdate() {
@@ -22,6 +27,6 @@ public class Panel : MonoBehaviour
     }
 
     public virtual void OnExit() {
-
+        gameObject.SetActive(false);
     }
 }

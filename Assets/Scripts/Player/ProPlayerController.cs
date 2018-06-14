@@ -39,6 +39,7 @@ public class ProPlayerController : MonoBehaviour {
 
     [Header("Other")]
     public Vector3 lastMoveDirection;
+    public Vector3 grabbingBoxDirection;
 
 
     //Input
@@ -79,6 +80,9 @@ public class ProPlayerController : MonoBehaviour {
             move.x = i_moveRight * speed;
         }
 
+        if (move != Vector3.zero)
+            grabbingBoxDirection = move;
+
         //Add extra gravity for the player.
         rb.velocity += Physics.gravity * gravityMultiplier;
 
@@ -88,7 +92,7 @@ public class ProPlayerController : MonoBehaviour {
         if (Physics.Raycast(characterCollider.bounds.center,
             Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance),2f,groundLayers)) {
             inAir = false;
-            Debug.Log("Hit ground");
+            //Debug.Log("Hit ground");
         }
         else {
             inAir = true;
@@ -138,7 +142,7 @@ public class ProPlayerController : MonoBehaviour {
         }
 
         //Position the grabbing box
-        throwingController.grabbingBox.transform.position = (transform.position + move.normalized);
+        throwingController.grabbingBox.transform.position = (transform.position + grabbingBoxDirection.normalized);
 
     }
 }

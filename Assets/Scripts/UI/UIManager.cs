@@ -7,13 +7,15 @@ using UnityEngine.EventSystems;
 public class UIManager : MonoBehaviour {
     public EventSystem eventSystem;
 
-    private void Start()
+    private void Awake()
     {
         FindPanels();
+        //gameObject.SetActive(false);
     }
 
     void FindPanels() {
-        foreach(Panel panel in GetComponentsInChildren<Panel>()) {
+        Debug.Log("find panels");
+        foreach(Panel panel in GetComponentsInChildren<Panel>(true)) {
             panel.uiManager = this;
         }
     }
