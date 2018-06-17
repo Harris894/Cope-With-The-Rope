@@ -16,7 +16,8 @@ public class GrabbingBox : MonoBehaviour {
 
     public bool HasPlayer() {
         foreach(GameObject go in objectsInTrigger) {
-            if (go.GetComponent<ProPlayerController>()) {
+            
+            if (go != null && go.GetComponent<ProPlayerController>()) {
                 return true;
             }
         }

@@ -90,7 +90,7 @@ public class ProPlayerController : MonoBehaviour {
         Debug.DrawRay(characterCollider.bounds.center,
             Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
         if (Physics.Raycast(characterCollider.bounds.center,
-            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance),2f,groundLayers)) {
+            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance),3f,groundLayers)) {
             inAir = false;
             //Debug.Log("Hit ground");
         }

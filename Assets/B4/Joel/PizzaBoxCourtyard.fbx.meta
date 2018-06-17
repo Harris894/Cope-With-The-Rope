@@ -1,16 +1,49 @@
 fileFormatVersion: 2
-guid: 5d4c05bf82293f2478ed5f06303f81ff
-timeCreated: 1528817182
+guid: 122aab17ab73a4e4298af25cbb7441af
+timeCreated: 1527497580
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Box
+    100002: Cigarette
+    100004: Pizza Crust 01
+    100006: Pizza Crust 02
+    100008: Pizza Slice
+    100010: //RootNode
+    100012: Sauce
+    100014: SauceContainer
+    400000: Box
+    400002: Cigarette
+    400004: Pizza Crust 01
+    400006: Pizza Crust 02
+    400008: Pizza Slice
+    400010: //RootNode
+    400012: Sauce
+    400014: SauceContainer
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Newspaper
+    2100002: Material
+    2300000: Box
+    2300002: Cigarette
+    2300004: Pizza Crust 01
+    2300006: Pizza Crust 02
+    2300008: Pizza Slice
+    2300010: Sauce
+    2300012: SauceContainer
+    3300000: Box
+    3300002: Cigarette
+    3300004: Pizza Crust 01
+    3300006: Pizza Crust 02
+    3300008: Pizza Slice
+    3300010: Sauce
+    3300012: SauceContainer
+    4300000: Pizza Crust 02
+    4300002: Pizza Crust 01
+    4300004: Sauce
+    4300006: SauceContainer
+    4300008: Cigarette
+    4300010: Pizza Slice
+    4300012: Box
   externalObjects: {}
   materials:
     importMaterials: 1

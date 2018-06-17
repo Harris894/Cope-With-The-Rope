@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5d4c05bf82293f2478ed5f06303f81ff
-timeCreated: 1528817182
+guid: 20a6c66fbdb198945a2686c220adfa9c
+timeCreated: 1528883259
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -10,7 +10,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Newspaper
+    4300000: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
