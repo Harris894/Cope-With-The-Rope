@@ -78,7 +78,7 @@ public class ThrowingController : MonoBehaviour
     public void Throw(Rigidbody otherRB, float verticalForce, float horizontalForce){
         otherRB.isKinematic = false;
         otherRB.AddForce(Vector3.up * verticalForce, ForceMode.Impulse);
-        otherRB.AddForce(otherPlayer.lastMoveDirection * horizontalForce, ForceMode.Impulse);
+        otherRB.AddForce(otherPlayer.moveDirection * horizontalForce, ForceMode.Impulse);
         
         //StartCoroutine(disableRopeKinematic());
         StartCoroutine(DisableRopeKinematic());

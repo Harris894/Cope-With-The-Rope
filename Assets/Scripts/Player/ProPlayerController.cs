@@ -40,6 +40,7 @@ public class ProPlayerController : MonoBehaviour {
     [Header("Other")]
     public Vector3 lastMoveDirection;
     public Vector3 grabbingBoxDirection;
+    public Vector3 moveDirection;
 
 
     //Input
@@ -65,6 +66,7 @@ public class ProPlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        moveDirection.Set(move.x, 0, move.z);
 
         //Apply the movement
         if (moveRelativeToCamera) {
@@ -118,8 +120,16 @@ public class ProPlayerController : MonoBehaviour {
 
         //Jumping
         if (i_jump > 0 && !inAir && Time.time > lastJumpTime + jumpCooldown) {
-            rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
+            //If holding the other player half the jump power.
+            if (throwingController.isHolding) {
+                rb.velocity = new Vector3(rb.velocity.x, jumpPower * 0.5f, rb.velocity.z);
+            }
+            else {
+                rb.velocity = new Vector3(rb.velocity.x, jumpPower * 0.5f, rb.velocity.z);
+            }
+
             lastJumpTime = Time.time;
+
         }
         //Airdash
         else if (i_jump > 0 && inAir && Time.time > lastJumpTime + jumpCooldown) {
