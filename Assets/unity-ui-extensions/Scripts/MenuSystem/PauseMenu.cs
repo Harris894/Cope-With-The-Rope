@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PauseMenu : MonoBehaviour
     public static PauseMenu instance;
     public Panel firstActivePanel;
 
+    [SerializeField]
+    private Text feedBackText;
     MenuUIManager menuUIManager;
 
     private void Awake()
@@ -24,11 +27,17 @@ public class PauseMenu : MonoBehaviour
         }
 
         menuUIManager = GetComponent<MenuUIManager>();
+        SetFeedbackText("Go to the door and fuck your mommy over. Either that or you will no see your daddy back LOL XDDDDD");
     }
 
     private void Start()
     {
         gameObject.SetActive(false);
+    }
+
+    public void SetFeedbackText(string message)
+    {
+        feedBackText.text = "Objective: \n \n" + message;
     }
 
 

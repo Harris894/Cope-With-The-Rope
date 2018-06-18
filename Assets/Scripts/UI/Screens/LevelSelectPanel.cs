@@ -14,7 +14,7 @@ public class LevelSelectPanel : Panel {
         List<string> levelList = new List<string>();
         foreach (LevelDatas.Level level in MySceneManager.instance.levelDatas.levelList)
         {
-            levelList.Add(level.sceneName);
+            levelList.Add(level.name);
             levelDataList.Add(level);
         }
         levelSelectDropdown.AddOptions(levelList);
