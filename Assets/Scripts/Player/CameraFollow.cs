@@ -6,8 +6,11 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
     public List<Transform> targets;
-    public float time;
+    public float positionTime;
+    public float rotationTime;
+
     public Vector3 cameraOffset;
+    
     
 	// Update is called once per frame
 	void Update () {
@@ -21,9 +24,9 @@ public class CameraFollow : MonoBehaviour {
             }
             targetTransform = targetTransform / targets.Count;
             
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, time * Time.deltaTime);
-            transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, time * Time.deltaTime);
-            transform.LookAt(targetTransform);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationTime * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetTransform + cameraOffset, positionTime * Time.deltaTime);
+            //transform.LookAt(targetTransform);
         }
 	}
 }

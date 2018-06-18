@@ -10931,7 +10931,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1327316754817454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.43, y: 11.763438, z: -103.41}
+  m_LocalPosition: {x: 46.5, y: 300.55, z: -1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4439976229920526}
@@ -20785,7 +20785,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1764501963194938}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 8
   m_Drag: 1
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -20800,7 +20800,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374058575834802}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 8
   m_Drag: 1
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -21003,37 +21003,37 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   invMasses:
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
-  - 3.3333333
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
   solidRadii:
   - 0.08
   - 0.08
@@ -21347,8 +21347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualize: 0
-  maxBending: 0
-  stiffness: 1
+  maxBending: 10
+  stiffness: 0.4
   batches:
   - maxYoungModulus: 200
     minYoungModulus: 0.0001
@@ -21410,7 +21410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualize: 0
-  stretchingScale: 7
+  stretchingScale: 9
   stiffness: 1
   slack: 0
   batches:
