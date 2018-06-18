@@ -1300,7 +1300,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4749cf6a23b26ba43a2794e1337872e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    type: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
 --- !u!1 &911387380
 GameObject:
   m_ObjectHideFlags: 0

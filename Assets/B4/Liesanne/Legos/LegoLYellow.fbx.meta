@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 4eb774d0b7bb72842bcb7640e31203d8
+guid: 566b53373bc7e274b999124d084cab77
+timeCreated: 1528974853
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -8,8 +10,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sandwich02
-    2186277476908879412: ImportLogs
+    4300000: LegoLYellow
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -29,7 +30,6 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

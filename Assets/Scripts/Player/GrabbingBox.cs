@@ -15,13 +15,29 @@ public class GrabbingBox : MonoBehaviour {
     }
 
     public bool HasPlayer() {
+        CheckForNullObjects();
         foreach(GameObject go in objectsInTrigger) {
-            
             if (go != null && go.GetComponent<ProPlayerController>()) {
                 return true;
             }
         }
         return false;
+    }
+
+    public void CheckForNullObjects()
+    {
+        List<GameObject> nullObjects = new List<GameObject>();
+        foreach(GameObject go in objectsInTrigger)
+        {
+            if(go == null)
+            {
+                nullObjects.Add(go);
+            }
+        }
+        foreach(GameObject go in nullObjects)
+        {
+            objectsInTrigger.Remove(go);
+        }
     }
 
     public ProPlayerController GetPlayer() {

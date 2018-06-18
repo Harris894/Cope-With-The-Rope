@@ -105,7 +105,7 @@ public class ProPlayerController : MonoBehaviour {
         RaycastHit hit;
         //Debug.DrawRay(characterCollider.bounds.center, transform.position + move.normalized, Color.magenta);
         Debug.DrawRay(characterCollider.bounds.center, move * 10, Color.magenta);
-        if(Physics.Raycast(characterCollider.bounds.center, move * 10, out hit, 10f, groundLayers)) {
+        if(Physics.Raycast(characterCollider.bounds.center, move * 10, out hit, 1f, groundLayers)) {
             if (inAir) {
                 airHit = true;
             }

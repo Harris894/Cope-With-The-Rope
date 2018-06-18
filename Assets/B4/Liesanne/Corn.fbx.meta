@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4eb774d0b7bb72842bcb7640e31203d8
+guid: 2076e393fd374c34789284749af6f2e9
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sandwich02
-    2186277476908879412: ImportLogs
+    4300000: Corn
   externalObjects: {}
   materials:
     importMaterials: 1
