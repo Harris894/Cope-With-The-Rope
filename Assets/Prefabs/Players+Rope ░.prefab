@@ -3371,12 +3371,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c997e8fd1389b6e46b043c65b49b383b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForceHorizontal: 600
+  throwForceHorizontal: 450
   throwForceVertical: 50
   isHolding: 0
   carrier: {fileID: 0}
   grabbingBox: {fileID: 114417197853328636}
-  holdingPos: {fileID: 4458301502083076}
+  holdingPos: {fileID: 4760370309877842}
   obiRope: {fileID: 0}
   otherPlayer: {fileID: 0}
 --- !u!114 &114635585956244398
@@ -3465,7 +3465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c997e8fd1389b6e46b043c65b49b383b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForceHorizontal: 600
+  throwForceHorizontal: 450
   throwForceVertical: 50
   isHolding: 0
   carrier: {fileID: 0}
