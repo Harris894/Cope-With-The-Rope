@@ -48,8 +48,8 @@ public class ProUserInput : MonoBehaviour {
         moveRight += Input.GetAxis(string.Format("Left Stick X {0}", playerNumber));
 
 
-        if (!startButton)
-            startButton = Input.GetButtonDown(string.Format("Start {0}", playerNumber));
+        if (!startButton && playerNumber == 1)
+            startButton = Input.GetButtonDown(string.Format("Start {0}", 1));
         if (!primaryAction)
         primaryAction = Input.GetButtonDown(string.Format("X{0}", playerNumber));
         if(!secondaryAction)
@@ -57,9 +57,11 @@ public class ProUserInput : MonoBehaviour {
         #endregion
 
 
+        float lastTriggerTime = 0;
         #region HandleSomeInput
-        if (startButton && PauseMenu.instance != null)
+        if (startButton && PauseMenu.instance != null && Time.time > lastTriggerTime + 2f)
         {
+            lastTriggerTime = Time.time;
             if (PauseMenu.instance.gameObject.activeInHierarchy)
             {
                 PauseMenu.instance.SetActive(false);

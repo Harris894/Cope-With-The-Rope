@@ -16,6 +16,13 @@ public class Restart : MonoBehaviour {
         }
 	}
 
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
     private void OnApplicationQuit()
     {
         GameAnalytics.NewDesignEvent("Times_Restarted", restartCount);

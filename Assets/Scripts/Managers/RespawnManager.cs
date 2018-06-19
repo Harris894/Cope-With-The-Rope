@@ -79,6 +79,7 @@ public class RespawnManager : MonoBehaviour {
     public void Respawn()
     {
         rope = playersInDeathZone[0].transform.parent.GetComponentInChildren<ObiRope>();
+        if(rope != null)
         rope.gameObject.SetActive(false);
 
         List<ProPlayerController> templist = new List<ProPlayerController>();
@@ -88,7 +89,6 @@ public class RespawnManager : MonoBehaviour {
             player.GetComponent<ObiRigidbody>().kinematicForParticles = true;
             player.GetComponent<Rigidbody>().isKinematic = true;
             player.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-
         }
         StartCoroutine(DisableKinematic(delay,templist));
     }
@@ -96,10 +96,19 @@ public class RespawnManager : MonoBehaviour {
     IEnumerator DisableKinematic(float delay, List<ProPlayerController> playerControllerList)
     {
         yield return new WaitForSeconds(delay);
-        rope.gameObject.SetActive(true);
+        if(rope!= null)
+        //rope.gameObject.SetActive(true);
         foreach (ProPlayerController player in playerControllerList)
         {
             player.transform.position = currentRespawnPoint.transform.position;
+            player.GetComponent<ObiRigidbody>().kinematicForParticles = true;
+            player.GetComponent<Rigidbody>().isKinematic = true;
+        }
+
+        rope.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        foreach (ProPlayerController player in playerControllerList)
+        {
             player.GetComponent<ObiRigidbody>().kinematicForParticles = false;
             player.GetComponent<Rigidbody>().isKinematic = false;
         }

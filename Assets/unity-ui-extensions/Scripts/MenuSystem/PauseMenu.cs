@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class PauseMenu : MonoBehaviour
         }
 
         menuUIManager = GetComponent<MenuUIManager>();
-        SetFeedbackText("Go to the door and fuck your mommy over. Either that or you will no see your daddy back LOL XDDDDD");
+        SetFeedbackText("");
     }
 
     private void Start()
@@ -63,5 +64,10 @@ public class PauseMenu : MonoBehaviour
         {
             unpaused.TransitionTo(.01f);
         }
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

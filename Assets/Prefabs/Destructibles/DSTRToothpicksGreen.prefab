@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33067079021843832}
   - component: {fileID: 23852890575883144}
   - component: {fileID: 54507931248961772}
-  - component: {fileID: 64144152979399446}
   - component: {fileID: 114402533772250238}
+  - component: {fileID: 65581684481318084}
   m_Layer: 0
   m_Name: Toothpick (65)
   m_TagString: Untagged
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 33009865837555148}
   - component: {fileID: 23683645525192016}
   - component: {fileID: 54065749181679202}
-  - component: {fileID: 64183337626832410}
   - component: {fileID: 114744462510224142}
+  - component: {fileID: 65256762817781946}
   m_Layer: 0
   m_Name: Toothpick (68)
   m_TagString: Untagged
@@ -62,8 +62,8 @@ GameObject:
   - component: {fileID: 33862753150531550}
   - component: {fileID: 23345489075625270}
   - component: {fileID: 54530131763151830}
-  - component: {fileID: 64243790306148120}
   - component: {fileID: 114398585439129816}
+  - component: {fileID: 65116383332977382}
   m_Layer: 0
   m_Name: Toothpick (64)
   m_TagString: Untagged
@@ -82,8 +82,8 @@ GameObject:
   - component: {fileID: 33395651879746180}
   - component: {fileID: 23573883741001028}
   - component: {fileID: 54288367161767510}
-  - component: {fileID: 64939149327269286}
   - component: {fileID: 114434530375981746}
+  - component: {fileID: 65137934451809694}
   m_Layer: 0
   m_Name: Toothpick (69)
   m_TagString: Untagged
@@ -117,8 +117,8 @@ GameObject:
   - component: {fileID: 33673873513090954}
   - component: {fileID: 23954250356440678}
   - component: {fileID: 54362181647753248}
-  - component: {fileID: 64173456880329858}
   - component: {fileID: 114390315175514320}
+  - component: {fileID: 65983876558998678}
   m_Layer: 0
   m_Name: Toothpick (70)
   m_TagString: Untagged
@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 33497718189693936}
   - component: {fileID: 23697771688928518}
   - component: {fileID: 54486655544967506}
-  - component: {fileID: 64169550246019776}
   - component: {fileID: 114282235925191280}
+  - component: {fileID: 65235861603434540}
   m_Layer: 0
   m_Name: Toothpick (66)
   m_TagString: Untagged
@@ -157,8 +157,8 @@ GameObject:
   - component: {fileID: 33806454092353450}
   - component: {fileID: 23652787523707160}
   - component: {fileID: 54748657791110874}
-  - component: {fileID: 64799253784566368}
   - component: {fileID: 114501884019247660}
+  - component: {fileID: 65771879343909802}
   m_Layer: 0
   m_Name: Toothpick (67)
   m_TagString: Untagged
@@ -669,64 +669,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64144152979399446
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036192052646170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64169550246019776
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1874159748848998}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64173456880329858
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1873084550837916}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64183337626832410
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1086231671564530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64243790306148120
-MeshCollider:
+--- !u!65 &65116383332977382
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -734,27 +678,11 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64799253784566368
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987840548240002}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
---- !u!64 &64939149327269286
-MeshCollider:
+  serializedVersion: 2
+  m_Size: {x: 0.001304072, y: 0.0013376098, z: 0.042617}
+  m_Center: {x: -0.000000059575605, y: -0.00000005972085, z: -0.0000042784955}
+--- !u!65 &65137934451809694
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -762,11 +690,69 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 9ae067c573406604da33841fc79ff351, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0013040713, y: 0.0013376075, z: 0.042617004}
+  m_Center: {x: 0.000000029831412, y: -0.00000005972106, z: -0.0000042859465}
+--- !u!65 &65235861603434540
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874159748848998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013040748, y: 0.0013376093, z: 0.042617004}
+  m_Center: {x: -0.000000029773553, y: -0.00000011932555, z: -0.0000042859465}
+--- !u!65 &65256762817781946
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1086231671564530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013040723, y: 0.0013376107, z: 0.042617}
+  m_Center: {x: 2.8980525e-11, y: -0.00000005972073, z: -0.000004273373}
+--- !u!65 &65581684481318084
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036192052646170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013040737, y: 0.0013376125, z: 0.042617004}
+  m_Center: {x: -0.000000029772991, y: -0.00000005972055, z: -0.0000042710453}
+--- !u!65 &65771879343909802
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987840548240002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013040714, y: 0.0013376129, z: 0.042617004}
+  m_Center: {x: -0.000000059575573, y: -0.00000005972052, z: -0.0000042635947}
+--- !u!65 &65983876558998678
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873084550837916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013040713, y: 0.0013376075, z: 0.042617004}
+  m_Center: {x: -0.000000059575555, y: -0.00000005972106, z: -0.00000433065}
 --- !u!114 &114282235925191280
 MonoBehaviour:
   m_ObjectHideFlags: 1
