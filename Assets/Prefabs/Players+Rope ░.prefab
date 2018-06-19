@@ -3103,7 +3103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRelativeToCamera: 1
-  groundCheckRayExtendDistance: 0.3
+  groundCheckRayExtendDistance: 0.1
   speed: 10
   jumpPower: 30
   jumpCooldown: 1
@@ -3769,7 +3769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRelativeToCamera: 1
-  groundCheckRayExtendDistance: 0.3
+  groundCheckRayExtendDistance: 0.1
   speed: 10
   jumpPower: 30
   jumpCooldown: 1

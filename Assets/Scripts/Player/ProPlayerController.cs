@@ -42,6 +42,8 @@ public class ProPlayerController : MonoBehaviour {
     public Vector3 grabbingBoxDirection;
     public Vector3 moveDirection;
 
+    private Vector3 rightSide, leftSide, frontSide, backSide;
+
 
     //Input
     float i_jump;
@@ -88,17 +90,64 @@ public class ProPlayerController : MonoBehaviour {
         //Add extra gravity for the player.
         rb.velocity += Physics.gravity * gravityMultiplier;
 
+#region GROUNDCHECK
         //Groundcheck
+        rightSide = characterCollider.bounds.center;
+        rightSide.x += characterCollider.bounds.extents.x;
+
+        leftSide = characterCollider.bounds.center;
+        leftSide.x += characterCollider.bounds.extents.x * -1;
+
+        frontSide = characterCollider.bounds.center;
+        frontSide.z += characterCollider.bounds.extents.z;
+
+        backSide = characterCollider.bounds.center;
+        backSide.z += characterCollider.bounds.extents.z * -1;
+
+
         Debug.DrawRay(characterCollider.bounds.center,
             Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
+
+        Debug.DrawRay(frontSide,
+           Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
+
+        Debug.DrawRay(rightSide,
+          Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
+
+        Debug.DrawRay(backSide,
+          Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
+
+        Debug.DrawRay(leftSide,
+          Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), Color.red);
+
         if (Physics.Raycast(characterCollider.bounds.center,
             Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance),3f,groundLayers)) {
             inAir = false;
-            //Debug.Log("Hit ground");
+        }
+        else if (Physics.Raycast(rightSide,
+            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), 3f, groundLayers))
+        {
+            inAir = false;
+        }
+        else if (Physics.Raycast(leftSide,
+            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), 3f, groundLayers))
+        {
+            inAir = false;
+        }
+        else if (Physics.Raycast(backSide,
+            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), 3f, groundLayers))
+        {
+            inAir = false;
+        }
+        else if (Physics.Raycast(frontSide,
+            Vector3.down * (characterCollider.bounds.extents.y + groundCheckRayExtendDistance), 3f, groundLayers))
+        {
+            inAir = false;
         }
         else {
             inAir = true;
         }
+#endregion
 
         //front hit test 
         bool airHit = false;
