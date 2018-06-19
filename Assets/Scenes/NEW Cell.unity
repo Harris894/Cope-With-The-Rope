@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -260,9 +260,9 @@ GameObject:
   - component: {fileID: 35853494}
   - component: {fileID: 35853493}
   - component: {fileID: 35853497}
-  - component: {fileID: 35853496}
   - component: {fileID: 35853495}
   - component: {fileID: 35853498}
+  - component: {fileID: 35853496}
   m_Layer: 0
   m_Name: SmallBatteryR
   m_TagString: Untagged
@@ -1313,6 +1313,7 @@ GameObject:
   - component: {fileID: 96094113}
   - component: {fileID: 96094112}
   - component: {fileID: 96094115}
+  - component: {fileID: 96094114}
   m_Layer: 0
   m_Name: WholeSandwich (1)
   m_TagString: Untagged
@@ -1377,6 +1378,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96094110}
   m_Mesh: {fileID: 4300000, guid: c031d12e4e9be30429d187eda65ed21a, type: 3}
+--- !u!114 &96094114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96094110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  phase: 0
+  thickness: 0.45
+  unityCollider: {fileID: 96094115}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!64 &96094115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1855,6 +1873,136 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 99fe2311448f9c841a24bb9a782f3023, type: 3}
+--- !u!43 &143083275
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ropeMesh
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 0
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 0
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!43 &148022896
 Mesh:
   m_ObjectHideFlags: 0
@@ -2222,6 +2370,7 @@ GameObject:
   - component: {fileID: 174908205}
   - component: {fileID: 174908204}
   - component: {fileID: 174908206}
+  - component: {fileID: 174908207}
   m_Layer: 0
   m_Name: Cheese01 (1)
   m_TagString: Untagged
@@ -2300,6 +2449,23 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: 538eb82837e93d644a3eb0625f29543e, type: 3}
+--- !u!114 &174908207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174908202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  phase: 0
+  thickness: 0.45
+  unityCollider: {fileID: 174908206}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!1 &185854706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4857,9 +5023,9 @@ GameObject:
   - component: {fileID: 406864302}
   - component: {fileID: 406864301}
   - component: {fileID: 406864305}
-  - component: {fileID: 406864304}
   - component: {fileID: 406864303}
   - component: {fileID: 406864306}
+  - component: {fileID: 406864304}
   m_Layer: 0
   m_Name: BigBatteryR (1)
   m_TagString: Untagged
@@ -6907,6 +7073,7 @@ GameObject:
   - component: {fileID: 515475281}
   - component: {fileID: 515475280}
   - component: {fileID: 515475283}
+  - component: {fileID: 515475282}
   m_Layer: 0
   m_Name: WholeSandwich
   m_TagString: Untagged
@@ -6971,6 +7138,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515475278}
   m_Mesh: {fileID: 4300000, guid: c031d12e4e9be30429d187eda65ed21a, type: 3}
+--- !u!114 &515475282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515475278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  phase: 0
+  thickness: 0.45
+  unityCollider: {fileID: 515475283}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!64 &515475283
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7184,6 +7368,10 @@ Prefab:
       value: They have opened the first door, but there were two more blocking their
         escape. They needed to find more keys. (Find all three keys to open all the
         doors and escape)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941597533102746, guid: 3359bc0df81e2b648b8c95e5627bccaf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3359bc0df81e2b648b8c95e5627bccaf, type: 2}
@@ -10416,42 +10604,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778322152}
   m_Mesh: {fileID: 4300000, guid: c2e1f4bbf84d21d4cb1e77427122a840, type: 3}
---- !u!1 &810577861 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1213239002552334, guid: d60f3caf96b34104e9ca7673d1cc082e,
-    type: 2}
-  m_PrefabInternal: {fileID: 2121558227}
---- !u!114 &810577862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810577861}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  phase: 0
-  thickness: 0.45
-  unityCollider: {fileID: 810577863}
-  useDistanceFields: 0
-  distanceField: {fileID: 0}
---- !u!64 &810577863
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810577861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
 --- !u!1 &815580713
 GameObject:
   m_ObjectHideFlags: 0
@@ -14308,8 +14460,8 @@ GameObject:
   - component: {fileID: 1128451040}
   - component: {fileID: 1128451045}
   - component: {fileID: 1128451044}
-  - component: {fileID: 1128451043}
   - component: {fileID: 1128451042}
+  - component: {fileID: 1128451043}
   m_Layer: 0
   m_Name: SmallBatteryR (1)
   m_TagString: Untagged
@@ -15194,6 +15346,7 @@ GameObject:
   - component: {fileID: 1253901937}
   - component: {fileID: 1253901936}
   - component: {fileID: 1253901938}
+  - component: {fileID: 1253901939}
   m_Layer: 0
   m_Name: Tomato02 (1)
   m_TagString: Untagged
@@ -15272,6 +15425,23 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 538eb82837e93d644a3eb0625f29543e, type: 3}
+--- !u!114 &1253901939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253901934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  phase: 0
+  thickness: 0.45
+  unityCollider: {fileID: 1253901938}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!1 &1254224846
 GameObject:
   m_ObjectHideFlags: 0
@@ -17723,9 +17893,9 @@ GameObject:
   - component: {fileID: 1436434409}
   - component: {fileID: 1436434408}
   - component: {fileID: 1436434412}
-  - component: {fileID: 1436434411}
   - component: {fileID: 1436434410}
   - component: {fileID: 1436434413}
+  - component: {fileID: 1436434411}
   m_Layer: 0
   m_Name: BigBatteryR
   m_TagString: Untagged
@@ -17968,9 +18138,9 @@ GameObject:
   - component: {fileID: 1440764227}
   - component: {fileID: 1440764226}
   - component: {fileID: 1440764230}
-  - component: {fileID: 1440764229}
   - component: {fileID: 1440764228}
   - component: {fileID: 1440764231}
+  - component: {fileID: 1440764229}
   m_Layer: 0
   m_Name: BigBatteryR (2)
   m_TagString: Untagged
@@ -19064,9 +19234,9 @@ GameObject:
   - component: {fileID: 1527116033}
   - component: {fileID: 1527116038}
   - component: {fileID: 1527116036}
-  - component: {fileID: 1527116035}
   - component: {fileID: 1527116037}
   - component: {fileID: 1527116039}
+  - component: {fileID: 1527116035}
   m_Layer: 0
   m_Name: BottlecapRed
   m_TagString: Untagged
@@ -19137,7 +19307,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527116031}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
   m_Name: 
@@ -19156,9 +19326,9 @@ MeshCollider:
   m_GameObject: {fileID: 1527116031}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7b1a413af96484f478797f90c08e2594, type: 3}
@@ -20583,8 +20753,8 @@ GameObject:
   - component: {fileID: 1595372465}
   - component: {fileID: 1595372464}
   - component: {fileID: 1595372467}
-  - component: {fileID: 1595372466}
   - component: {fileID: 1595372468}
+  - component: {fileID: 1595372466}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -26954,6 +27124,7 @@ GameObject:
   - component: {fileID: 2024886687}
   - component: {fileID: 2024886686}
   - component: {fileID: 2024886688}
+  - component: {fileID: 2024886689}
   m_Layer: 0
   m_Name: Tomato01 (1)
   m_TagString: Untagged
@@ -27032,6 +27203,23 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 538eb82837e93d644a3eb0625f29543e, type: 3}
+--- !u!114 &2024886689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024886684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  phase: 0
+  thickness: 0.45
+  unityCollider: {fileID: 2024886688}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!1 &2033173581
 GameObject:
   m_ObjectHideFlags: 0
@@ -27715,9 +27903,9 @@ GameObject:
   - component: {fileID: 2069319245}
   - component: {fileID: 2069319244}
   - component: {fileID: 2069319243}
-  - component: {fileID: 2069319242}
   - component: {fileID: 2069319246}
   - component: {fileID: 2069319247}
+  - component: {fileID: 2069319242}
   m_Layer: 0
   m_Name: Branch
   m_TagString: Untagged
