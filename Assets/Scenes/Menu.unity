@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 904532632}
   - component: {fileID: 904532633}
   - component: {fileID: 904532634}
+  - component: {fileID: 904532635}
   m_Layer: 0
   m_Name: _Managers
   m_TagString: Untagged
@@ -1301,15 +1302,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    type: 
-    clip: {fileID: 0}
+  - name: MainMenu
+    type: background
+    clip: {fileID: 8300000, guid: 5af2aba99a5ff4346a2b15f6697c9f10, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 1
+    spatialBlend: 0
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
+    background: {fileID: 243331757836602284, guid: b8cb985959c7919449eaf3640a3ca83c,
+      type: 2}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: Footsteps
+    type: sfx
+    clip: {fileID: 8300000, guid: 358611159a8362a4e87087cbc53e7edb, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 1
+    spatialBlend: 0
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: Credits
+    type: background
+    clip: {fileID: 8300000, guid: e7152da11e9cb644683ebbf36b86af95, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 1
+    spatialBlend: 0
+    sfx: {fileID: 0}
+    background: {fileID: 243331757836602284, guid: b8cb985959c7919449eaf3640a3ca83c,
+      type: 2}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: cdTrigger
+    type: sfx
+    clip: {fileID: 8300000, guid: 05467cb180ec34144926da2052e0c885, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: leverTrigger
+    type: sfx
+    clip: {fileID: 8300000, guid: 4b40299515a64ac48ba3ca5dd5a9093c, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: plateTrigger
+    type: sfx
+    clip: {fileID: 8300000, guid: f15d1dea3b9bb7f41b9077331d1f03b1, type: 3}
+    volume: 1
+    pitch: 1
+    onAwake: 0
+    loop: 0
+    spatialBlend: 0
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
+    background: {fileID: 0}
+    ambient: {fileID: 0}
+    source: {fileID: 0}
+  - name: talkSound
+    type: sfx
+    clip: {fileID: 8300000, guid: 745405d3fb1233c4f99e278a78d4eeed, type: 3}
     volume: 0
     pitch: 0
     onAwake: 0
     loop: 0
     spatialBlend: 0
-    sfx: {fileID: 0}
+    sfx: {fileID: 24300002, guid: 350c2ba54c0b86b42b3abee2ad2377f2, type: 2}
     background: {fileID: 0}
     ambient: {fileID: 0}
     source: {fileID: 0}
@@ -1349,78 +1424,18 @@ MonoBehaviour:
     background: {fileID: 0}
     ambient: {fileID: 0}
     source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
-  - name: 
-    type: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    onAwake: 0
-    loop: 0
-    spatialBlend: 0
-    sfx: {fileID: 0}
-    background: {fileID: 0}
-    ambient: {fileID: 0}
-    source: {fileID: 0}
+--- !u!114 &904532635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904532628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3970572f590fe41ab4e93995f1306a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: e4beba6570b64c04580d44a781f02d19, type: 2}
 --- !u!1 &911387380
 GameObject:
   m_ObjectHideFlags: 0
